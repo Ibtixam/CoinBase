@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: #FFF9FE; */
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-grow: inherit;
+}
+
+.container{
+    padding: 43px 49px;
+    width: 100%;
+    height: 100vh;
+}

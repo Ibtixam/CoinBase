@@ -1,0 +1,122 @@
+import { Daniel, Patience, Evlyne, Petaaa, Daniella, Layla, Moroe, Ashley, Sharone, Online, Offline } from "../../Images";
+
+export const data = [
+    {
+        id: 0,
+        picture: Daniel,
+        name: "Daniel",
+        status: "Online",
+        onlineicon: Online,
+        sender: "Hello am new to this system can i get a breakdown on how it works?",
+        reply: "Yes we currently run both on our platform here",
+        sender2: "Please, can you go into details bout the service",
+        reply2: "Hello am new to this system can i get a breakdown on how it works?",
+        sender3: "Yes we currently run both on our platform here",
+        reply3: "Let's trading together and grow with coinbase"
+    },
+    {
+        id: 1,
+        picture: Patience,
+        name: "Patience",
+        status: "Offline",
+        onlineicon: Offline,
+        sender: "Hey Patience, how's it going?",
+        reply: "Hey Patience! I'm good, thanks. Just looking forward.",
+        sender2: "Not much, really. Was thinking of maybe catching a movie or something. You?",
+        reply2: "Actually, I was hoping to go for a hike. The weather's supposed to be amazing.",
+        sender3: "A hike, huh? That sounds fun, but you know I don't go.",
+        reply3: "Come on, Alex! It's not like we're climbing mountains."
+        
+    },
+    {
+        id: 2,
+        picture: Evlyne,
+        name: "Evlyne",
+        status: "Offline",
+        onlineicon: Offline,
+        sender: "Hey Evlyne, have you seen the new art exhibit downtown?",
+        reply: "I went there last weekend. The arts were incredible.",
+        sender2: "I've been meaning to go. Any recommendations?",
+        reply2: "You've got to check out the abstract section. The use of colors is mind-blowing.",
+        sender3: "Sounds intriguing. I love how art can evoke emotions.",
+        reply3: "Absolutely. And there's this one sculpture that's just mesmerizing."
+    },
+    {
+        id: 3,
+        picture: Petaaa,
+        name: "Petaaa",
+        status: "Offline",
+        onlineicon: Offline,
+        sender: "Petaaa, have you ever tried cooking a new cuisine?",
+        reply: "Yes, I cooked Thain foods for the first time last week.",
+        sender2: "That's impressive! Did it turn out well?",
+        reply2: "Surprisingly, yes! The Pad Thai was a hit.",
+        sender3: "I've been wanting to experiment too. Any tips for me",
+        reply3: "Start with simple recipes and make sure you have all the ingredients prepped beforehand."
+        },
+    {
+        id: 4,
+        picture: Daniella,
+        name: "Daniella",
+        status: "Online",
+        onlineicon: Online,
+        sender: "Daniella, have you ever been snorkeling?",
+        reply: " I went snorkeling in Hawaii. And underwater is great",
+        sender2: "Hawaii sounds like a dream. Did you see any colorful fish?",
+        reply2: "Tons of them! It was like swimming in a living rainbow.",
+        sender3: "I've always wanted to try it. Was it difficult sometime",
+        reply3: "Not really, just remember to breathe through the tube."
+    },
+    {
+        id: 5,
+        picture: Sharone,
+        name: "Sharone",
+        status: "Online",
+        onlineicon: Offline,
+        sender: "Sharone, have you ever been to a music festival?",
+        reply: "Hey Agent, yes, I went to one last summer. Great",
+        sender2: "That sounds amazing. Did you see any of your favorite bands?",
+        reply2: "Absolutely! I got to see my all-time favorite band perform live.",
+        sender3: "I'm jealous! How was the atmosphere? very bad",
+        reply3: "Electric. The crowd was dancing and singing non-stop."
+    },
+    {
+        id: 6,
+        picture: Layla,
+        name: "Layla",
+        status: "Offline",
+        onlineicon: Offline,
+        sender: "Layla, have you ever tried skydiving?",
+        reply: "Yeah, I went skydiving last summer. That's insane.",
+        sender2: "I've always wanted to try it. Was it scary?",
+        reply2: "Terrifying at first, but the freefall is unforgettable.",
+        sender3: "It was a mix of excitement and the encouragement",
+        reply3: "Maybe one day I'll gather the nerve to do it too, Daniel."
+    },
+    {
+        id: 7,
+        picture: Moroe,
+        name: "Moroe",
+        status: "Offline",
+        onlineicon: Offline,
+        sender: "Moroe, have you ever traveled solo?",
+        reply: "Hey Agent, yeah, I backpacked through Europe solo.",
+        sender2: "That sounds incredible. Any standout moments?",
+        reply2: "Meeting new people from different cultures was the best part.",
+        sender3: "Wasn't it challenging being on your own opinion?",
+        reply3: "It was, but it pushed me out of my comfort zone in the best way."
+    },
+    {
+        id: 8,
+        picture: Ashley,
+        name: "Ashley",
+        status: "Online",
+        onlineicon: Online,
+        sender: "Ashley, have you ever tried surfing?",
+        reply: "Hey Mia, yeah, I tried it during my beach vacation.",
+        sender2: "Was it difficult to balance on the waves?",
+        reply2: "It took a few tries, but the feeling of catching a wave was worth it.",
+        sender3: "I've always wanted to learn. Did you stand on board?",
+        reply3: "Eventually, after a few wipeouts! It's all about practice."
+    },
+]

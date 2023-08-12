@@ -1,0 +1,109 @@
+.rates {
+  width: 1023px;
+  height: 325px;
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+  background: #fff;
+}
+
+.r-title {
+  margin-bottom: 10px;
+  color: #858585;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 45px;
+  margin-left: 52px;
+  letter-spacing: 0.4px;
+}
+
+.c-title {
+  width: 115px;
+  height: 23px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(--4, linear-gradient(185deg, #fd749b 0%, #281ac8 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 54px;
+  margin-top: 40px;
+  margin-right: 142px;
+}
+
+.cards-wrapper {
+  display: flex;
+  margin-left: 53px;
+  margin-top: 11px;
+  width: 280px;
+}
+
+.l-text {
+  width: 155px;
+  height: 25px;
+  color: #858585;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.r-text {
+  width: 63px;
+  height: 25px;
+  color: #858585;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.r-left {
+  flex: 1;
+  /* Take one-third of the available space */
+}
+
+.r-right {
+  flex: 2;
+  /* Take two-thirds of the available space */
+}
+
+.wrapper {
+  display: flex;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.head-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.r-img {
+  margin-right: 46px;
+  margin-top: 43px;
+  cursor: pointer;
+}
+
+.arrow-div {
+  display: flex;
+  margin-right: 42px;
+}
+
+.arrow {
+  position: absolute;
+  margin-left: 14px;
+  margin-top: 68px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.arrow-circle {
+  position: relative;
+}

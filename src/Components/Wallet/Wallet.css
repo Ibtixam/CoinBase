@@ -1,0 +1,97 @@
+.wallet {
+  width: 1023px;
+  height: 350px;
+  border-radius: 10px;
+  border: 1px solid #f0f0f0;
+  background: linear-gradient(185deg, #fd749b 0%, #281ac8 135%);
+  margin: 33px 0px;
+}
+
+.w-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.w-shape {
+  margin-left: -20px;
+  margin-top: -12px;
+  width: 1040px;
+  height: 76.362px;
+}
+
+.w-text {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 52px;
+}
+
+.w-btn {
+  width: 134px;
+  height: 42px;
+  border-radius: 100px;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 400;
+  border: 0;
+  outline: 0;
+  margin: 32px 32px;
+  cursor: pointer;
+}
+
+.btn-gradient {
+  background: var(--4, linear-gradient(185deg, #fd749b 0%, #281ac8 100%));
+  border: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wallet-trophy {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.w-title {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.w-desc {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 163.418%; /* 19.61px */
+}
+
+.desc-text {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.w-balance,
+.w-earning {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  background: linear-gradient(144deg, #fc58b3 0%, #feae68 100%);
+  border: 0;
+  outline: 0;
+  padding: 4px 10px;
+  border-radius: 30px;
+}
+
+.w-texts {
+  margin-left: 25px;
+}

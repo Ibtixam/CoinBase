@@ -1,0 +1,141 @@
+.Statistics {
+  width: 1023px;
+  height: 580px;
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+  background: #fff;
+  margin-bottom: 33px;
+  position: relative;
+}
+
+.statistic-text {
+  display: block;
+  color: #858585;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.graph-wrapper {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.lines {
+  width: 861.169px;
+  height: 0.966px;
+  border: dashed #dae2e9 0.5px;
+  margin-top: 32px;
+  margin-bottom: 53px;
+}
+
+.number-pargraphs {
+  color: #858585;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 37px;
+}
+
+.numbers {
+  width: 40px;
+  height: 356px;
+  margin-top: 23px;
+  margin-left: 68px;
+  border-right: #dee6e9 3px solid;
+}
+
+.graph-img {
+  position: relative;
+  padding-right: 64px;
+  margin-top: -300px;
+}
+
+.company-names {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin-left: 85px;
+}
+
+.names {
+  color: #858585;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.company-graph {
+  margin-left: 30px;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 153px;
+  height: 86px;
+  border-radius: 4px;
+  background: #f3dbf9;
+  left: 39%;
+  top: 24%;
+}
+
+.score-text {
+  color: #858585;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.score-num {
+  color: #b327f5;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  margin-bottom: 11px;
+}
+
+.progress-bar {
+  width: 130px;
+  height: 5px;
+  background: #fff;
+  border-radius: 2.5px;
+}
+
+.fill {
+  width: 90px;
+  height: 5px;
+  border-radius: 2.5px;
+  background: linear-gradient(185deg, #fd749b 0%, #281ac8 140%);
+}
+
+.avarage-circles {
+  position: absolute;
+  left: 45%;
+  top: 43%;
+  z-index: 2;
+}
+
+.circles1 {
+  top: 39.3%;
+  left: 43.1%;
+}
+
+.circles2 {
+  top: 41.3%;
+  left: 44.2%;
+}
+
+.circles3 {
+  top: 43%;
+  left: 45%;
+}
