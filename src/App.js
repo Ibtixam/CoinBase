@@ -26,6 +26,7 @@ export default function App() {
               <Route path="/wallet" element={<Wallet />} />
               <Route path="/statistics" element={<Statistics />} />
               <Route path="/transactionList" element={<TransactionList />} />
+              <Route path="/setting" element={<Home />} />
             </Routes>
           </div>
         </main>

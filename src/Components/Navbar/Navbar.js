@@ -1,9 +1,6 @@
 import React from "react";
-import logo from "../../Images/logo.svg";
-import SearchIcon from "../../Images/Search-Icon.svg";
+import { LogoSvg, SearchIconSvg, OvalSvg, BellSvg } from "../../assets/svgs";
 import Agent from "../../Images/Agent.png";
-import Bell from "../../Images/bell.svg";
-import Oval from "../../Images/oval.svg";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -11,12 +8,12 @@ export default function Navbar() {
     <header>
       <nav>
         <div className="left">
-          <img src={logo} alt="cionbase logo" className="logo" />
+          <LogoSvg className="logo" />
         </div>
         <div className="right">
           <div className="searchbar">
-            <img src={SearchIcon} alt="Search Icon" className="s-icon" />
             <div className="search">
+            <SearchIconSvg className="s-icon" />
               <input type="text" placeholder="Search e.g cards" />
             </div>
           </div>
@@ -25,8 +22,8 @@ export default function Navbar() {
             <p className="img-name">Agent Rose</p>
           </div>
           <div className="bell-notification">
-            <img src={Bell} alt="Bell Icon" className="bell" />
-            <img src={Oval} alt="Oval shape" className="oval" />
+            <BellSvg className="bell" />
+            <OvalSvg className="oval" />
             <p className="b-num">24</p>
           </div>
         </div>

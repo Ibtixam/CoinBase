@@ -6,7 +6,7 @@
 }
 
 .o-text {
-  color: #858585;
+  color: white;
   font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
@@ -16,13 +16,17 @@
   margin-top: 15px;
 }
 
+.calender:hover{
+  cursor: pointer;
+}
+
 .o-text-wrapper {
   display: flex;
   justify-content: space-between;
 }
 
 .o-text2 {
-  color: #858585;
+  color: white;
   text-align: center;
   font-family: Poppins;
   font-size: 12px;
@@ -31,7 +35,7 @@
 
 .o-text3 {
   display: inline-block;
-  color: #858585;
+  color: white;
   font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
@@ -39,7 +43,7 @@
 }
 
 .o-title {
-  color: #858585;
+  color: white;
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 700;
@@ -51,7 +55,7 @@
   height: 170px;
   border-radius: 10px;
   border: 2px solid #f0f0f0;
-  background: #fff;
+  background: #1e0338;
   margin-top: 60px;
   margin-left: 35px;
   padding: 10px 0px;
@@ -101,7 +105,7 @@
 }
 
 .s-title {
-  color: #858585;
+  color: white;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 700;

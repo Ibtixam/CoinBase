@@ -3,14 +3,14 @@
   height: 580px;
   border-radius: 10px;
   border: 2px solid #f0f0f0;
-  background: #fff;
+  background: #1e0338;
   margin-bottom: 33px;
   position: relative;
 }
 
 .statistic-text {
   display: block;
-  color: #858585;
+  color: white;
   font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
@@ -26,13 +26,13 @@
 .lines {
   width: 861.169px;
   height: 0.966px;
-  border: dashed #dae2e9 0.5px;
+  border: dashed #462764 0.5px;
   margin-top: 32px;
   margin-bottom: 53px;
 }
 
 .number-pargraphs {
-  color: #858585;
+  color: white;
   font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
@@ -48,9 +48,8 @@
 }
 
 .graph-img {
-  position: relative;
-  padding-right: 64px;
   margin-top: -300px;
+  margin-right: 64px;
 }
 
 .company-names {
@@ -61,7 +60,7 @@
 }
 
 .names {
-  color: #858585;
+  color: white;
   font-family: Poppins;
   font-size: 12px;
   font-weight: 400;

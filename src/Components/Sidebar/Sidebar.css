@@ -1,43 +1,16 @@
 aside {
   border: 2px solid #f0f0f0;
-  background: white;
-  width: 400px;
-  height: 480vh;
+  background: #1e0338;
+  width: 300px;
+  height: 100%;
+  border-top: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 100;
+  margin-top: 83px;
 }
-
-/* Gradient SideBar */
-/* 
-.g-overview {
-  margin-top: 35px;
-  background: linear-gradient(185deg, #fd749b 0%, #281ac8 100%);
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
-  width: 250px;
-}
-
-.g-wrapper {
-  display: flex;
-  padding: 18px;
-  align-items: center;
-  padding-left: 55px;
-}
-
-.g-eye {
-  width: 16px;
-  height: 11px;
-  margin-right: 25px;
-  cursor: pointer;
-}
-
-.g-text {
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  font-size: 13px;
-  cursor: pointer;
-  font-weight: 400;
-} */
-
-/* Simple Sidebar */
 
 .s-overview {
   margin-top: 20px;
@@ -56,7 +29,7 @@ aside {
 }
 
 .s-text {
-  color: #000;
+  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -69,7 +42,7 @@ aside {
   display: block;
   padding: 12px;
   background: transparent;
-  color: #858585;
+  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -84,7 +57,7 @@ aside {
   display: block;
   padding: 12px;
   background: transparent;
-  color: #858585;
+  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -96,13 +69,13 @@ a {
   text-decoration: none;
 }
 
-.active{
+.active {
   background: linear-gradient(185deg, #fd749b 0%, #281ac8 100%);
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   width: 250px;
 }
 
-.active a{
+.active a {
   color: white;
 }

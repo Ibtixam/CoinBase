@@ -1,44 +1,44 @@
-.user-details{
-    width: 900px;
-    height: 65px;
-    border-radius: 100px;
-    border: 1px solid #F0F0F0;
-    background: #FFF;
-    margin-top: 10px;
-    margin-left: 59px;
-    margin-right: 52px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 40px;
+.user-details {
+  width: 900px;
+  height: 65px;
+  border-radius: 100px;
+  border: 1px solid #f0f0f0;
+  background: #1e0338;
+  margin-top: 10px;
+  margin-left: 59px;
+  margin-right: 52px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px;
 }
 
-.user-status{
-    width: 94px;
-    height: 27px;
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 12px;
-    font-weight: 700;
-    background: #5DF888;
-    border-radius: 30px;
-    text-align: center;
-    margin-top: 21px;
-    padding-top: 5px;
+.user-status {
+  width: 94px;
+  height: 27px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 700;
+  background: #5df888;
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 21px;
+  padding-top: 5px;
 }
 
-.u-img{
-    margin-left: 72px;
+.u-img {
+  margin-left: 72px;
 }
 
-.user-email{
-    color: #858585;
-    font-family: Poppins;
-    font-size: 12px;
-    font-weight: 400;
-    margin: 23px 0px;
+.user-email {
+  color: white;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 23px 0px;
 }
 
-.user-action{
-    margin: 28px 10px;
-    cursor: pointer;
+.user-action {
+  margin: 28px 10px;
+  cursor: pointer;
 }

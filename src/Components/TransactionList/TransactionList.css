@@ -1,39 +1,39 @@
-.tr-list{
-    width: 1023px;
-    height: 570px;
-    border-radius: 10px;
-    border: 2px solid #F0F0F0;
-    background: #FFF;
-    margin-top: 33px;
+.tr-list {
+  width: 1023px;
+  height: 570px;
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+  background: #1e0338;
+  margin-top: 33px;
 }
 
-.t-title{
-    color: #858585;
-    font-family: Poppins;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 0px 25px;
+.t-title {
+  color: white;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0px 25px;
 }
 
-.tr-titles{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 35px;
-    margin-bottom: 33px;
-    padding: 0px 20px;
+.tr-titles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 33px;
+  padding: 0px 20px;
 }
 
-.tr-view-more{
-    width: 140px;
-    height: 45px;
-    background: linear-gradient(185deg, #fd749b 0%, #281ac8 130%);
-    border: 0;
-    outline: 0;
-    border-radius: 100px;
-    color: #fff;
-    font-family: Poppins;
-    font-size: 12px;
-    margin: 20px 0px;
-    cursor: pointer;
+.tr-view-more {
+  width: 140px;
+  height: 45px;
+  background: linear-gradient(185deg, #fd749b 0%, #281ac8 130%);
+  border: 0;
+  outline: 0;
+  border-radius: 100px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  margin: 20px 0px;
+  cursor: pointer;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Transaction.css";
-import Action from '../../Images/options.svg';
+import { OptionSvg } from "../../assets/svgs";
 
 export default function Transaction(props) {
   return (
@@ -24,7 +24,7 @@ export default function Transaction(props) {
         <p className="tr-title">#18000</p>
       </div>
       <div className="tr-status tr-title" style={{background: props.bg}} >{props.status}</div>
-      <img src={Action} alt="options" className="tr-action tr-title" />
+      <OptionSvg className="tr-action tr-title" />
     </div>
   );
 }

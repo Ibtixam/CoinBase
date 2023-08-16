@@ -1,4 +1,4 @@
-import { Bitcoin, Wallet2 } from '../../Images';
+import { Wallet, Bitcoin } from "../../Images";
 
 export const Data = [
     {
@@ -13,7 +13,7 @@ export const Data = [
         status: "Failed",
         name: "Amazon",
         bg: "#F85D5D",
-        type: Wallet2,
+        type: Wallet,
     },
     {
         id: "2",
@@ -27,6 +27,6 @@ export const Data = [
         status: "Completed",
         name: "Bitcion",
         bg: "#5DF888",
-        type: Wallet2,
+        type: Wallet,
     }
 ]

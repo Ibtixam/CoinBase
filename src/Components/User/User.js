@@ -1,6 +1,6 @@
 import React from "react";
 import "./User.css";
-import Action from "../../Images/options.svg";
+import { OptionSvg } from "../../assets/svgs";
 
 export default function User({ data }) {
   const { bg, status, name, email, photo } = data;
@@ -17,7 +17,7 @@ export default function User({ data }) {
         <p className="user-email">{email}</p>
       </div>
       <div>
-        <img src={Action} alt="options" className="user-action" />
+        <OptionSvg className="user-action" />
       </div>
     </div>
   );
