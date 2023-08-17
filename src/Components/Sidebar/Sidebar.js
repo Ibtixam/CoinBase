@@ -19,7 +19,7 @@ export default function Sidebar() {
     console.log(active);
   };
 
-  return (
+  return ( 
     <aside>
       <div
         className={`s-overview ${

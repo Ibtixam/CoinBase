@@ -6,8 +6,6 @@ import { data } from "./Data";
 
 export default function Trade() {
   const [selectedUserId, setSelectedUserId] = useState(null);
-  const [changebg, setbg] = useState(null)
-
   const selectedUser = data.find((user) => user.id === selectedUserId);
 
   return (
