@@ -3,12 +3,12 @@
   height: 570px;
   border-radius: 10px;
   border: 2px solid #f0f0f0;
-  background: #1e0338;
+  background: var(--bgDark);
   margin-top: 33px;
 }
 
 .t-title {
-  color: white;
+  color: var(--white);
   font-family: Poppins;
   font-size: 12px;
   font-weight: 700;

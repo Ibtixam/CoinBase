@@ -3,7 +3,7 @@
   height: 750px;
   border-radius: 10px;
   border: 2px solid #f0f0f0;
-  background: #1e0338;
+  background: var(--bgDark);
   margin-top: 24px;
   display: flex;
   overflow: hidden;
@@ -21,14 +21,14 @@
 }
 
 .c-name {
-  color: white;
+  color: var(--white);
   font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
 }
 
 .online-offline {
-  color: white;
+  color: var(--white);
   font-family: Poppins;
   font-size: 10px;
   font-weight: 400;
@@ -71,7 +71,7 @@
 }
 
 .massage-time {
-  color: white;
+  color: var(--white);
   font-family: Poppins;
   font-size: 10px;
   font-weight: 400;
@@ -171,7 +171,7 @@
   background: linear-gradient(185deg, #fd749b 0%, #281ac8 130%);
   border: 0;
   outline: 0;
-  color: #fff;
+  color: var(--white);
   text-align: center;
   font-family: Poppins;
   font-size: 12px;

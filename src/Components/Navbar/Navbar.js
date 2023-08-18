@@ -4,16 +4,32 @@ import Agent from "../../Images/Agent.png";
 import "./Navbar.css";
 
 export default function Navbar() {
+
+  const handleSidebar = () => {
+    let sidebar = document.querySelector("aside");
+    sidebar.classList.toggle("sidebar-active");
+  }
+  
+  const handleDisplay = () => {
+    let sidebar = document.querySelector("aside");
+    sidebar.style.display = "inline";
+  }
+
   return (
     <header>
       <nav>
+        <div className="menu" onClick={handleSidebar} onMouseEnter={handleDisplay}>
+          <div className="menuline"></div>
+          <div className="menuline"></div>
+          <div className="menuline"></div>
+        </div>
         <div className="left">
           <LogoSvg className="logo" />
         </div>
         <div className="right">
           <div className="searchbar">
             <div className="search">
-            <SearchIconSvg className="s-icon" />
+              <SearchIconSvg className="s-icon" />
               <input type="text" placeholder="Search e.g cards" />
             </div>
           </div>

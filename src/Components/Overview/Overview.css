@@ -6,7 +6,7 @@
 }
 
 .o-text {
-  color: white;
+  color: var(--white);
   font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
@@ -26,7 +26,7 @@
 }
 
 .o-text2 {
-  color: white;
+  color: var(--white);
   text-align: center;
   font-family: Poppins;
   font-size: 12px;
@@ -35,7 +35,7 @@
 
 .o-text3 {
   display: inline-block;
-  color: white;
+  color: var(--white);
   font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
@@ -43,7 +43,7 @@
 }
 
 .o-title {
-  color: white;
+  color: var(--white);
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 700;
@@ -55,7 +55,7 @@
   height: 170px;
   border-radius: 10px;
   border: 2px solid #f0f0f0;
-  background: #1e0338;
+  background: var(--bgDark);
   margin-top: 60px;
   margin-left: 35px;
   padding: 10px 0px;
@@ -105,7 +105,7 @@
 }
 
 .s-title {
-  color: white;
+  color: var(--white);
   font-family: Poppins;
   font-size: 16px;
   font-weight: 700;

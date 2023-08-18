@@ -6,7 +6,7 @@
   height: 65px;
   border-radius: 100px;
   border: 1px solid #f0f0f0;
-  background: #1e0338;
+  background: var(--bgDark);
   margin: auto;
   margin-bottom: 10px;
   padding-left: 7px;
@@ -14,7 +14,7 @@
 }
 
 .Transaction p {
-  color: white;
+  color: var(--white);
   font-family: Poppins;
   font-size: 12px;
   font-weight: 400;

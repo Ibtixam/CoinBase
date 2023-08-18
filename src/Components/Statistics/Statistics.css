@@ -3,14 +3,14 @@
   height: 580px;
   border-radius: 10px;
   border: 2px solid #f0f0f0;
-  background: #1e0338;
+  background: var(--bgDark);
   margin-bottom: 33px;
   position: relative;
 }
 
 .statistic-text {
   display: block;
-  color: white;
+  color: var(--white);
   font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
@@ -32,7 +32,7 @@
 }
 
 .number-pargraphs {
-  color: white;
+  color: var(--var(--white));
   font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
@@ -60,7 +60,7 @@
 }
 
 .names {
-  color: white;
+  color: var(--white);
   font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
