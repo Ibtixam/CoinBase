@@ -1,4 +1,4 @@
-import { Ramon, Photo, Photo2, Photo3, Photo4 } from "../../Images";
+import { Ramon, Photo, Photo2, Photo3, Photo4 } from "../../assets/images";
 
 export const UserData = [
   {

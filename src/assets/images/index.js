@@ -12,9 +12,9 @@ import Sharone from './Sharone.png';
 import Layla from './Layla.png';
 import Moroe from './Moroe.png';
 import Ashley from './Ramon.png';
-import Online from '../assets/svgs/Online.svg';
-import Offline from '../assets/svgs/Offline.svg';
-import Wallet from '../assets/svgs/wallet.svg';
-import Bitcoin from '../assets/svgs/bitcoin.svg';
+import Online from '../svgs/Online.svg';
+import Offline from '../svgs/Offline.svg';
+import Wallet from '../svgs/wallet.svg';
+import Bitcoin from '../svgs/bitcoin.svg';
 
 export { Ramon, Photo, Photo2, Photo3, Photo4, Daniel, Patience, Evlyne, Petaaa, Daniella, Layla, Moroe, Ashley, Sharone, Online, Offline, Wallet, Bitcoin };

@@ -141,10 +141,26 @@ input {
 }
 
 @media screen and (min-width: 1200px) {
-  .menu{
+  .menu {
     display: none;
   }
-  .left{
+  .left {
     margin-left: 40px;
+  }
+  nav {
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .search{
+    height: 40px;
+    width: 350px;
+  }
+  .s-icon{
+    margin-top: 13px;
+  }
+  .input{
+    margin-top: 11px;
   }
 }

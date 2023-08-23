@@ -39,3 +39,8 @@ export { ReactComponent as Bitcoin2Svg } from "./bitcoin.svg";
 export { ReactComponent as OnlineSvg } from "./Online.svg";
 export { ReactComponent as OfflineSvg } from "./Offline.svg";
 export { ReactComponent as AttachSvg } from "./attach.svg";
+export { ReactComponent as TraphyStarSvg } from "./Trophy-Star.svg";
+export { ReactComponent as PloshSvg } from "./w-plash.svg";
+export { ReactComponent as Star1Svg } from "./whitestar.svg";
+export { ReactComponent as Star2Svg } from "./star2.svg";
+export { ReactComponent as EarningStarSvg } from "./earningstar.svg";

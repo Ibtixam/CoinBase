@@ -1,6 +1,6 @@
 import React from "react";
 import { LogoSvg, SearchIconSvg, OvalSvg, BellSvg } from "../../assets/svgs";
-import Agent from "../../Images/Agent.png";
+import Agent from "../../assets/images/Agent.png";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -8,17 +8,13 @@ export default function Navbar() {
   const handleSidebar = () => {
     let sidebar = document.querySelector("aside");
     sidebar.classList.toggle("sidebar-active");
+    // sidebar.style.display = "inline";
   }
   
-  const handleDisplay = () => {
-    let sidebar = document.querySelector("aside");
-    sidebar.style.display = "inline";
-  }
-
   return (
     <header>
       <nav>
-        <div className="menu" onClick={handleSidebar} onMouseEnter={handleDisplay}>
+        <div className="menu" onClick={handleSidebar}>
           <div className="menuline"></div>
           <div className="menuline"></div>
           <div className="menuline"></div>

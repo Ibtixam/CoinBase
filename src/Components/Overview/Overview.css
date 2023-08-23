@@ -16,7 +16,7 @@
   margin-top: 15px;
 }
 
-.calender:hover{
+.calender:hover {
   cursor: pointer;
 }
 
@@ -51,6 +51,7 @@
 }
 
 .o-trade {
+  display: flex;
   width: 318px;
   height: 170px;
   border-radius: 10px;
@@ -88,7 +89,6 @@
 }
 
 .c-text {
-  text-align: center;
   font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
@@ -96,12 +96,17 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: -44px;
-  margin-right: 199px;
+  position: absolute;
+  top: 50px;
+  left: 40px;
 }
 
 .status {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  margin-left: 60px;
 }
 
 .s-title {
@@ -109,8 +114,6 @@
   font-family: Poppins;
   font-size: 16px;
   font-weight: 700;
-  margin-top: -34px;
-  margin-left: 147px;
 }
 
 .s-num {
@@ -118,14 +121,12 @@
   font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
-  margin-left: 147px;
-  margin-top: 14px;
 }
 
 .s-graph {
   position: absolute;
   top: 50px;
-  left: 211px;
+  left: 58px;
 }
 
 .o-wrapper {
@@ -136,7 +137,12 @@
 
 .c-options {
   position: absolute;
-  top: -27px;
-  left: 285px;
+  bottom: 132px;
+  left: 130px;
   cursor: pointer;
+}
+
+.graphDiv {
+  display: flex;
+  margin-top: 12px;
 }

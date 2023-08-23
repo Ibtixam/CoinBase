@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { TriangleSvg, OnlineSvg, AttachSvg } from "../../assets/svgs";
 import "./Trade.css";
-import Agent from "../../Images/Agent.png";
+import Agent from "../../assets/images/Agent.png";
 import { data } from "./Data";
 
 export default function Trade() {

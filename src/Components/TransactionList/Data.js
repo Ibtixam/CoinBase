@@ -1,4 +1,4 @@
-import { Wallet, Bitcoin } from "../../Images";
+import { Wallet, Bitcoin } from "../../assets/images";
 
 export const Data = [
     {

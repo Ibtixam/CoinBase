@@ -32,7 +32,7 @@
 }
 
 .number-pargraphs {
-  color: var(--var(--white));
+  color: var(--white);
   font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
@@ -49,13 +49,13 @@
 
 .graph-img {
   margin-top: -300px;
-  margin-right: 64px;
+  margin-right: 63px;
 }
 
 .company-names {
   display: flex;
   justify-content: space-evenly;
-  width: 90%;
+  width: 89%;
   margin-left: 85px;
 }
 

@@ -2,12 +2,12 @@ aside {
   border: 2px solid #f0f0f0;
   background: var(--bgDark);
   width: 300px;
-  height: 100%;
+  height: 90%;
   border-top: 0;
   position: fixed;
   top: 0;
   left: 0;
-  overflow: hidden;
+  overflow: scroll;
   z-index: 100;
   margin-top: 83px;
   transition: ease-in-out all 0.4s;
@@ -81,7 +81,6 @@ a {
 .sidebar-active {
   transform: translateX(0px);
   position: absolute;
-  display: inline;
 }
 
 @media screen and (max-width: 1200px) {
@@ -89,7 +88,7 @@ a {
     margin-left: 0px;
   }
   aside{
-    display: none;
+    display: inline;
     transform: translateX(-300px);
   }
 }

@@ -62,10 +62,12 @@ export default function Overview(props) {
                 <p className="s-title">
                   Total Number <br /> Of {item.totalnumText}
                 </p>
-                <p className="s-num">
-                  {item.percent} <TriGreenSvg />
-                </p>
-                <GraphSvg className="s-graph" />
+                <div className="graphDiv">
+                  <p className="s-num">
+                    {item.percent} <TriGreenSvg />
+                  </p>
+                  <GraphSvg className="s-graph" />
+                </div>
                 <OptionSvg className="c-options" />
               </div>
             </div>

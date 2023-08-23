@@ -25,3 +25,7 @@ main {
   --bgDark: #1E0338;
   --white: white;
 }
+
+::-webkit-scrollbar{
+  width: 0px;
+}

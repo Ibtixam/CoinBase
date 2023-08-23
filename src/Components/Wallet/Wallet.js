@@ -1,6 +1,6 @@
 import React from "react";
 import "./Wallet.css";
-import { WalletShapeSvg, TrophySvg } from "../../assets/svgs";
+import { WalletShapeSvg, TrophySvg, TraphyStarSvg, PloshSvg, Star1Svg, Star2Svg, EarningStarSvg } from "../../assets/svgs";
 
 export default function Wallet() {
   return (
@@ -12,6 +12,11 @@ export default function Wallet() {
         </button>
       </div>
       <div className="wallet-trophy">
+        <PloshSvg className="w-plosh"/>
+        <TraphyStarSvg className="trophy-star"/>
+        <EarningStarSvg className="earning-star" />
+        <Star1Svg className="white-star"/>
+        <Star2Svg className="star-2"/>
         <TrophySvg className="w-trophy" />
         <div className="w-text-wrapper">
           <button className="w-earning">Total Earnings</button>
