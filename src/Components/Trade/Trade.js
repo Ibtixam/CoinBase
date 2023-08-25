@@ -1,25 +1,22 @@
 import React, { useState } from "react";
+import { TriangleSvg, OnlineSvg, AttachSvg } from "../../assets/svgs";
 import "./Trade.css";
-import Triangle from "../../Images/Triangle.png";
-import Agent from "../../Images/Agent.png";
-import Online from "../../Images/Online.svg";
+import Agent from "../../assets/images/Agent.png";
 import { data } from "./Data";
-import Attach from "../../Images/attach.svg";
 
 export default function Trade() {
   const [selectedUserId, setSelectedUserId] = useState(null);
-
   const selectedUser = data.find((user) => user.id === selectedUserId);
 
   return (
     <div className="trade">
       <div className="o-heading">
-        <pre className="o-text">Agent Management Trade</pre>
+        <pre className="o-text">Agent Management   Trade</pre>
         <pre className="o-text2">
-          Accounts |
+          Accounts   |
           <pre className="o-text3">
             AGENT ROSE
-            <img src={Triangle} alt="Trinangle" style={{ margin: "0px 3px" }} />
+            <TriangleSvg style={{ margin: "0px 7px" }} />
           </pre>
         </pre>
       </div>
@@ -30,7 +27,7 @@ export default function Trade() {
             <div className="chat-details">
               <div className="picture">
                 <img src={Agent} alt="Img" className="n-img" />
-                <img src={Online} alt="Online Icon" className="online" />
+                <OnlineSvg className="online" />
               </div>
               <div className="details">
                 <p className="c-name">Agent Rose</p>
@@ -104,7 +101,7 @@ export default function Trade() {
                     id="Input"
                     placeholder="Start typing here"
                   />
-                  <img src={Attach} alt="Attact icon" className="attach" />
+                  <AttachSvg className="attach" />
                   <button className="send">Send</button>
                 </div>
           </div>

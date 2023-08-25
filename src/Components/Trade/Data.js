@@ -1,4 +1,4 @@
-import { Daniel, Patience, Evlyne, Petaaa, Daniella, Layla, Moroe, Ashley, Sharone, Online, Offline } from "../../Images";
+import { Daniel, Patience, Evlyne, Petaaa, Daniella, Layla, Moroe, Ashley, Sharone, Online, Offline } from "../../assets/images/index";
 
 export const data = [
     {

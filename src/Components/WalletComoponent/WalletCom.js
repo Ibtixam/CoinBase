@@ -1,6 +1,6 @@
 import React from "react";
 import Wallet from "../Wallet/Wallet";
-import Triangle from "../../Images/Triangle.png";
+import { TriangleSvg } from "../../assets/svgs";
 
 export default function WalletCom() {
   return (
@@ -11,7 +11,7 @@ export default function WalletCom() {
           Accounts   |
           <pre className="o-text3">
             AGENT ROSE
-            <img src={Triangle} alt="Trinangle" style={{ margin: "0px 3px" }} />
+            <TriangleSvg style={{ margin: "0px 7px" }} />
           </pre>
         </pre>
       </div>

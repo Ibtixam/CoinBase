@@ -3,8 +3,10 @@
   height: 350px;
   border-radius: 10px;
   border: 1px solid #f0f0f0;
-  background: linear-gradient(185deg, #fd749b 0%, #281ac8 135%);
+  background: var(--bgDark);
   margin: 33px 0px;
+  position: relative;
+  overflow: hidden;
 }
 
 .w-title-wrapper {
@@ -42,7 +44,7 @@
 }
 
 .btn-gradient {
-  background: var(--4, linear-gradient(185deg, #fd749b 0%, #281ac8 100%));
+  background: linear-gradient(185deg, #fd749b 0%, #281ac8 100%);
   border: 0;
   background-clip: text;
   -webkit-background-clip: text;
@@ -94,4 +96,34 @@
 
 .w-texts {
   margin-left: 25px;
+}
+
+.w-plosh {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.trophy-star {
+  position: absolute;
+  left: 60px;
+  top: 100px;
+}
+
+.white-star {
+  position: absolute;
+  right: 330px;
+  top: 68px;
+}
+
+.star-2 {
+  position: absolute;
+  right: 75px;
+  bottom: 20px;
+}
+
+.earning-star {
+  position: absolute;
+  left: 46%;
+  top: 107px;
 }

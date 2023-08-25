@@ -1,21 +1,36 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 body{
     background: #FFF9FE;
+=======
+body {
+  background: #1E0338;
+>>>>>>> dark-mode
 }
 
-main{
-    display: flex;
-    flex-direction: row;
-    flex-grow: inherit;
+main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  margin-left: 300px;
 }
 
-.container{
-    padding: 43px 49px;
-    width: 100%;
-    height: 100vh;
+.container {
+  padding: 43px 49px;
+  width: 100%;
+  height: 100vh;
+}
+
+:root{
+  --bgDark: #1E0338;
+  --white: white;
+}
+
+::-webkit-scrollbar{
+  width: 0px;
 }

@@ -1,6 +1,6 @@
 import React from "react";
+import { OptionSvg } from "../../assets/svgs";
 import "./TransactionList.css";
-import Options from "../../Images/options.svg";
 import Transaction from "../Transaction/Transaction";
 import { Data } from "./Data";
 
@@ -9,7 +9,7 @@ export default function TransactionList() {
     <div className="tr-list">
       <div className="head-wrapper">
         <h4 className="r-title">Transactions</h4>
-        <img src={Options} alt="Option svg" className="r-img" />
+        <OptionSvg className="r-img" />
       </div>
       <div className="tr-titles">
         <p className="t-title">Date</p>

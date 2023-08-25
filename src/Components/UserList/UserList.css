@@ -3,7 +3,7 @@
   height: 644px;
   border-radius: 10px;
   border: 2px solid #f0f0f0;
-  background: #fff;
+  background: var(--bgDark);
 }
 
 .user-titles {
@@ -15,7 +15,7 @@
 }
 
 .u-title {
-  color: #858585;
+  color: var(--white);
   font-family: Poppins;
   font-size: 12px;
   font-weight: 700;

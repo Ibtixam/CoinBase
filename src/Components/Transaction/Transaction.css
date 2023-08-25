@@ -6,7 +6,7 @@
   height: 65px;
   border-radius: 100px;
   border: 1px solid #f0f0f0;
-  background: #fff;
+  background: var(--bgDark);
   margin: auto;
   margin-bottom: 10px;
   padding-left: 7px;
@@ -14,46 +14,46 @@
 }
 
 .Transaction p {
-  color: #858585;
+  color: var(--white);
   font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
 }
 
-.tr-status{
-    width: 94px;
-    height: 27px;
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 12px;
-    font-weight: 700;
-    background: #5DF888;
-    border-radius: 30px;
-    text-align: center;
-    margin-top: 1px;
-    padding-top: 5px;
+.tr-status {
+  width: 94px;
+  height: 27px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 700;
+  background: #5df888;
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 1px;
+  padding-top: 5px;
 }
 
-.tr-action{
+.tr-action {
   cursor: pointer;
 }
 
-.trDiv{
+.trDiv {
   margin-left: 12px;
 }
 
-.type-img{
+.type-img {
   margin-left: 45px;
 }
 
-.name{
+.name {
   margin-left: 30px;
 }
 
-.value{
+.value {
   margin-left: 20px;
 }
 
-.return{
+.return {
   margin-left: 28px;
-  }
+}

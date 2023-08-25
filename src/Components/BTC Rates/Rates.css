@@ -3,12 +3,12 @@
   height: 325px;
   border-radius: 10px;
   border: 2px solid #f0f0f0;
-  background: #fff;
+  background: var(--bgDark);
 }
 
 .r-title {
   margin-bottom: 10px;
-  color: #858585;
+  color: var(--white);
   font-family: Poppins;
   font-size: 16px;
   font-weight: 700;
@@ -25,7 +25,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  background: var(--4, linear-gradient(185deg, #fd749b 0%, #281ac8 100%));
+  background: linear-gradient(185deg, #fd749b 0%, #281ac8 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -44,7 +44,7 @@
 .l-text {
   width: 155px;
   height: 25px;
-  color: #858585;
+  color: var(--white);
   font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
@@ -54,7 +54,7 @@
 .r-text {
   width: 63px;
   height: 25px;
-  color: #858585;
+  color: var(--white);
   font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
@@ -63,12 +63,10 @@
 
 .r-left {
   flex: 1;
-  /* Take one-third of the available space */
 }
 
 .r-right {
   flex: 2;
-  /* Take two-thirds of the available space */
 }
 
 .wrapper {
@@ -94,12 +92,13 @@
 .arrow-div {
   display: flex;
   margin-right: 42px;
+  margin-top: 61px;
 }
 
 .arrow {
   position: absolute;
   margin-left: 14px;
-  margin-top: 68px;
+  margin-top: 15px;
   z-index: 1;
   cursor: pointer;
 }

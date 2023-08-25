@@ -1,26 +1,28 @@
 import React from "react";
 import "./Statistics.css";
-import Options from "../../Images/options.svg";
-import Amazon from "../../Images/amazonShape.svg";
-import Google from "../../Images/googleShape.svg";
-import iTunes from "../../Images/iTunesShape.svg";
-import Payoneer from "../../Images/payoneerShape.svg";
-import Bitcoin from "../../Images/bitcoinShape.svg";
-import Tecno from "../../Images/tecnoShape.svg";
-import Paypal from "../../Images/paypalShape.svg";
-import AliExpress from "../../Images/aliexpressShape.svg";
-import Konga from "../../Images/kongaShape.svg";
-import Jumia from "../../Images/jumiaShape.svg";
-import Circle1 from "../../Images/avaragecircle1.svg";
-import Circle2 from "../../Images/avaragecircle2.svg";
-import Circle3 from "../../Images/avaragecircle3.svg";
+import {
+  OptionSvg,
+  AmazonSvg,
+  GoogleSvg,
+  ITunesSvg,
+  PayoneerSvg,
+  PaypalSvg,
+  BitcoinSvg,
+  TechnoSvg,
+  AliExpressSvg,
+  KongaSvg,
+  JumiaSvg,
+  AvarageCircle1Svg,
+  AvarageCircle2Svg,
+  AvarageCircle3Svg,
+} from "../../assets/svgs";
 
 export default function Statistics() {
   return (
     <div className="Statistics">
       <div className="head-wrapper">
         <h4 className="r-title s-title">Statistics</h4>
-        <img src={Options} alt="Options" className="r-img" />
+        <OptionSvg className="r-img" />
       </div>
       <p className="statistic-text">My Own Report</p>
       <div className="graph-wrapper">
@@ -41,9 +43,9 @@ export default function Statistics() {
             </div>
           </div>
           <div className="circles">
-            <img src={Circle1} alt="Circle1" className="avarage-circles circles1" />
-            <img src={Circle2} alt="Circle2" className="avarage-circles circles2" />
-            <img src={Circle3} alt="Circle3" className="avarage-circles circles3" />
+            <AvarageCircle1Svg className="avarage-circles circles1" />
+            <AvarageCircle2Svg className="avarage-circles circles2" />
+            <AvarageCircle3Svg className="avarage-circles circles3" />
           </div>
           <div className="lines"></div>
           <div className="lines"></div>
@@ -52,17 +54,17 @@ export default function Statistics() {
           <div className="lines"></div>
           <div className="lines"></div>
           <div className="company-graph">
-            <img src={Amazon} alt="Amazon" className="graph-img" />
-            <img src={Google} alt="Google" className="graph-img" />
-            <img src={iTunes} alt="iTunes" className="graph-img" />
-            <img src={Payoneer} alt="Payoneer" className="graph-img" />
-            <img src={Bitcoin} alt="Bitcoin" className="graph-img" />
-            <img src={Amazon} alt="Amazon" className="graph-img" />
-            <img src={Tecno} alt="Tecno" className="graph-img" />
-            <img src={Paypal} alt="Paypal" className="graph-img" />
-            <img src={AliExpress} alt="AliExpress" className="graph-img" />
-            <img src={Konga} alt="Konga" className="graph-img" />
-            <img src={Jumia} alt="Jumia" className="graph-img" />
+            <AmazonSvg className="graph-img" />
+            <GoogleSvg className="graph-img" />
+            <ITunesSvg className="graph-img" />
+            <PayoneerSvg className="graph-img" />
+            <BitcoinSvg className="graph-img" />
+            <AmazonSvg className="graph-img" />
+            <TechnoSvg className="graph-img" />
+            <PaypalSvg className="graph-img" />
+            <AliExpressSvg className="graph-img" />
+            <KongaSvg className="graph-img" />
+            <JumiaSvg className="graph-img" />
           </div>
         </div>
       </div>
