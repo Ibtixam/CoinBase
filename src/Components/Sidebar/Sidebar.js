@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import "./Sidebar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   EyeSvg,
   UserSvg,
@@ -12,20 +12,19 @@ import {
 } from "../../assets/svgs";
 
 export default function Sidebar() {
-  const [active, setActice] = useState(window.location.href);
 
-  const activePage = () => {
-    setActice(window.location.href);
-    console.log(active);
-  };
+  let location = useLocation();
+
+  useEffect(() => {
+  }, [location]);
+
 
   return ( 
     <aside>
       <div
         className={`s-overview ${
-          active === "http://localhost:3000/" && "active"
+          location.pathname === "/" && "active"
         }`}
-        onClick={activePage}
       >
         <div className="s-wrapper">
           <EyeSvg className="s-eye" />
@@ -36,9 +35,8 @@ export default function Sidebar() {
       </div>
       <div
         className={`s-overview ${
-          active === "http://localhost:3000/userlist" && "active"
+          location.pathname === "/userlist" && "active"
         }`}
-        onClick={activePage}
       >
         <div className="s-wrapper">
           <UserSvg className="s-eye" />
@@ -49,9 +47,8 @@ export default function Sidebar() {
       </div>
       <div
         className={`s-overview ${
-          active === "http://localhost:3000/trade" && "active"
+          location.pathname === "/trade" && "active"
         }`}
-        onClick={activePage}
       >
         <div className="s-wrapper">
           <TradeSvg className="s-eye" />
@@ -62,9 +59,8 @@ export default function Sidebar() {
       </div>
       <div
         className={`s-overview ${
-          active === "http://localhost:3000/wallet" && "active"
+          location.pathname === "/wallet" && "active"
         }`}
-        onClick={activePage}
       >
         <div className="s-wrapper">
           <WalletSvg className="s-eye" />
@@ -75,9 +71,8 @@ export default function Sidebar() {
       </div>
       <div
         className={`s-overview ${
-          active === "http://localhost:3000/transactionlist" && "active"
+          location.pathname === "/transactionlist" && "active"
         }`}
-        onClick={activePage}
       >
         <div className="s-wrapper">
           <TransactionSvg className="s-eye" />
@@ -88,9 +83,8 @@ export default function Sidebar() {
       </div>
       <div
         className={`s-overview ${
-          active === "http://localhost:3000/statistics" && "active"
+          location.pathname === "/statistics" && "active"
         }`}
-        onClick={activePage}
       >
         <div className="s-wrapper">
           <StaticticSvg className="s-eye" />
@@ -101,9 +95,8 @@ export default function Sidebar() {
       </div>
       <div
         className={`s-overview ${
-          active === "http://localhost:3000/setting" && "active"
+          location.pathname === "/setting" && "active"
         }`}
-        onClick={activePage}
       >
         <div className="s-wrapper">
           <SettingsSvg className="s-eye" />

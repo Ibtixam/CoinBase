@@ -38,7 +38,7 @@ export default function Trade() {
           {data.map((item, index) => (
             <div
               className={`chats ${
-                selectedUserId === item.id ? "selected" : ""
+                selectedUserId === item.id && "selected"
               }`}
               key={index}
               onClick={() => setSelectedUserId(item.id)}
