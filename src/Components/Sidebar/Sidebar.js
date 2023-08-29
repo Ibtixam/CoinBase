@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./Sidebar.css";
 import { Link, useLocation } from "react-router-dom";
 import {
@@ -15,95 +15,83 @@ export default function Sidebar() {
 
   let location = useLocation();
 
-  useEffect(() => {
-  }, [location]);
+  useEffect(() => {}, [location]);
 
-
-  return ( 
+  return (
     <aside>
-      <div
-        className={`s-overview ${
-          location.pathname === "/" && "active"
-        }`}
-      >
-        <div className="s-wrapper">
-          <EyeSvg className="s-eye" />
-          <Link to="/" className="s-text">
+      <div className={`s-overview ${location.pathname === "/" && "active"}`}>
+        <Link to="/" className="s-text">
+          <div className="s-wrapper">
+            <EyeSvg className="s-eye" />
             Overview
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
       <div
         className={`s-overview ${
           location.pathname === "/userlist" && "active"
         }`}
       >
-        <div className="s-wrapper">
-          <UserSvg className="s-eye" />
-          <Link to="/userlist" className="s-text">
+        <Link to="/userlist" className="s-text">
+          <div className="s-wrapper">
+            <UserSvg className="s-eye" />
             User
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
       <div
-        className={`s-overview ${
-          location.pathname === "/trade" && "active"
-        }`}
+        className={`s-overview ${location.pathname === "/trade" && "active"}`}
       >
-        <div className="s-wrapper">
-          <TradeSvg className="s-eye" />
-          <Link to="/trade" className="s-text">
+        <Link to="/trade" className="s-text">
+          <div className="s-wrapper">
+            <TradeSvg className="s-eye" />
             Trade
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
       <div
-        className={`s-overview ${
-          location.pathname === "/wallet" && "active"
-        }`}
+        className={`s-overview ${location.pathname === "/wallet" && "active"}`}
       >
-        <div className="s-wrapper">
-          <WalletSvg className="s-eye" />
-          <Link to="/wallet" className="s-text">
+        <Link to="/wallet" className="s-text">
+          <div className="s-wrapper">
+            <WalletSvg className="s-eye" />
             Wallet
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
       <div
         className={`s-overview ${
           location.pathname === "/transactionlist" && "active"
         }`}
       >
-        <div className="s-wrapper">
-          <TransactionSvg className="s-eye" />
-          <Link to="/transactionlist" className="s-text">
+        <Link to="/transactionlist" className="s-text">
+          <div className="s-wrapper">
+            <TransactionSvg className="s-eye" />
             Transactions
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
       <div
         className={`s-overview ${
           location.pathname === "/statistics" && "active"
         }`}
       >
-        <div className="s-wrapper">
-          <StaticticSvg className="s-eye" />
-          <Link to="/statistics" className="s-text">
+        <Link to="/statistics" className="s-text">
+          <div className="s-wrapper">
+            <StaticticSvg className="s-eye" />
             Statistics
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
       <div
-        className={`s-overview ${
-          location.pathname === "/setting" && "active"
-        }`}
+        className={`s-overview ${location.pathname === "/setting" && "active"}`}
       >
-        <div className="s-wrapper">
-          <SettingsSvg className="s-eye" />
-          <Link to="/setting" className="s-text">
+        <Link to="/setting" className="s-text">
+          <div className="s-wrapper">
+            <SettingsSvg className="s-eye" />
             Settings
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
       <button className="refer">Referral</button>
       <button className="logout">Logout</button>

@@ -6,8 +6,8 @@ export const UserData = [
     status: "Active",
     bg: "#5DF888",
     img: "/",
-    name: "Ramon Ridwan",
-    email: "Ramonridwan@protonmail.com",
+    name: "Hafiz M. Ibtisam",
+    email: "M.Ibtisam868@gmail.com",
     photo: Ramon,
   },
   {
@@ -15,8 +15,8 @@ export const UserData = [
     status: "Down",
     bg: "#FF4949",
     img: "/",
-    name: "Ramon Ridwan",
-    email: "Ramonridwan@protonmail.com",
+    name: "Ayesha kamal",
+    email: "ayeshakamal@gmail.com",
     photo: Photo
   },
   {
@@ -24,8 +24,8 @@ export const UserData = [
     status: "Active",
     bg: "#5DF888",
     img: "/Images/photo.png",
-    name: "Ramon Ridwan",
-    email: "Ramonridwan@protonmail.com",
+    name: "Zaheer Bashir",
+    email: "Zaheerkpr3@gmail.com",
     photo: Photo2
   },
   {
@@ -33,8 +33,8 @@ export const UserData = [
     status: "Pending",
     bg: "linear-gradient(185deg, #FD749B 0%, #281AC8 130%)",
     img: "../Images/Ramon.png",
-    name: "Ramon Ridwan",
-    email: "Ramonridwan@protonmail.com",
+    name: "Ibtisam Iqbal",
+    email: "Ibtisamkhan524@gmail.com",
     photo: Photo3
   },
   {
@@ -42,8 +42,8 @@ export const UserData = [
     status: "Down",
     bg: "#FF4949",
     img: "/",
-    name: "Ramon Ridwan",
-    email: "Ramonridwan@protonmail.com",
+    name: "Zeeshan sheikh",
+    email: "Zeeshanheikh@gmail.com",
     photo: Photo4
   },
 ];

@@ -27,7 +27,16 @@
 }
 
 .u-img {
-  margin-left: 72px;
+  padding-left: 50px;
+  width: 224px;
+}
+
+.user-img {
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 12px;
 }
 
 .user-email {
@@ -36,6 +45,13 @@
   font-size: 12px;
   font-weight: 400;
   margin: 23px 0px;
+}
+
+.emailDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 196px;
 }
 
 .user-action {

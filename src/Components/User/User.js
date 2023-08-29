@@ -11,9 +11,9 @@ export default function User({ data }) {
       </div>
       <div className="p-img u-img">
         <img src={photo} alt="Img" className="n-img" />
-        <p className="img-name">{name}</p>
+        <p className="user-img">{name}</p>
       </div>
-      <div>
+      <div className="emailDiv">
         <p className="user-email">{email}</p>
       </div>
       <div>

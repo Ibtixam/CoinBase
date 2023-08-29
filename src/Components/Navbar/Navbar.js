@@ -8,7 +8,6 @@ export default function Navbar() {
   const handleSidebar = () => {
     let sidebar = document.querySelector("aside");
     sidebar.classList.toggle("sidebar-active");
-    // sidebar.style.display = "inline";
   }
   
   return (
