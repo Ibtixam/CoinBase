@@ -4,13 +4,13 @@ import {
   LoaderSvg,
   VectorSvg,
   Vector2Svg,
-  OptionSvg,
   GraphSvg,
   CalenderSvg,
   TriangleSvg,
   TriGreenSvg,
 } from "../../assets/svgs";
 import "./Overview.css";
+import DropDown from "../DropDown/DropDown";
 
 export default function Overview(props) {
   const data = [
@@ -34,9 +34,9 @@ export default function Overview(props) {
   return (
     <React.Fragment>
       <div className="o-heading">
-        <pre className="o-text">Agent Management    System Overview</pre>
+        <pre className="o-text">Agent Management System Overview</pre>
         <pre className="o-text2">
-          Accounts   |
+          Accounts |
           <pre className="o-text3">
             AGENT ROSE
             <TriangleSvg style={{ margin: "0px 7px" }} />
@@ -67,8 +67,8 @@ export default function Overview(props) {
                     {item.percent} <TriGreenSvg />
                   </p>
                   <GraphSvg className="s-graph" />
+                  <DropDown index={index} Class={"c-options"} />
                 </div>
-                <OptionSvg className="c-options" />
               </div>
             </div>
           ))}

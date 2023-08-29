@@ -3,6 +3,7 @@ import "./UserList.css";
 import { OptionSvg } from "../../assets/svgs";
 import User from "../User/User";
 import { UserData } from "./Data";
+import { Link } from "react-router-dom";
 
 export default function UserList() {
   return (
@@ -21,7 +22,9 @@ export default function UserList() {
         <User key={item.id} data={item} />
       ))}
       <div className="user-btndiv">
-        <button className="view-more">View More</button>
+        <Link to="/userlist">
+          <button className="view-more">View More</button>
+        </Link>
       </div>
     </div>
   );

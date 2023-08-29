@@ -3,6 +3,7 @@ import { OptionSvg } from "../../assets/svgs";
 import "./TransactionList.css";
 import Transaction from "../Transaction/Transaction";
 import { Data } from "./Data";
+import { Link } from "react-router-dom";
 
 export default function TransactionList() {
   return (
@@ -31,8 +32,10 @@ export default function TransactionList() {
         />
       ))}
       <div className="user-btndiv">
-        <button className="tr-view-more">View More</button>
-      </div>  
+        <Link to="/transactionlist">
+          <button className="tr-view-more">View More</button>
+        </Link>
+      </div>
     </div>
   );
 }

@@ -135,13 +135,6 @@
   margin-bottom: 34px;
 }
 
-.c-options {
-  position: absolute;
-  bottom: 132px;
-  left: 130px;
-  cursor: pointer;
-}
-
 .graphDiv {
   display: flex;
   margin-top: 12px;

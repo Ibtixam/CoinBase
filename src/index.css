@@ -24,6 +24,7 @@ main {
 :root{
   --bgDark: #1E0338;
   --white: white;
+  --bgGradient: linear-gradient(185deg, #fd749b 0%, #281ac8 100%);
 }
 
 ::-webkit-scrollbar{

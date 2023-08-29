@@ -1,0 +1,46 @@
+.options {
+  position: absolute;
+  width: 59px;
+  height: 0px;
+  top: -16px;
+  right: -80px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  color: var(--gray);
+  text-align: start;
+  font-family: poppins;
+  font-size: 14px;
+  font-weight: 400;
+  z-index: 12;
+  transition: height 0.2s, border 0.3s;
+  overflow: hidden;
+}
+.edit {
+  background: white;
+  border-bottom: 1px;
+  padding: 4px;
+  cursor: pointer;
+}
+.enable {
+  background: white;
+  padding: 6px 4px;
+  cursor: pointer;
+}
+
+.enable:hover,
+.edit:hover {
+  background: var(--bgGradient);
+  color: white;
+}
+.selectoptions {
+  height: 60px;
+  border: 1px solid var(--white);
+}
+
+.c-options {
+  position: absolute;
+  top: -25px;
+  right: -40px;
+  cursor: pointer;
+}
