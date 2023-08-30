@@ -3,27 +3,28 @@ import "./DropDown.css";
 import { OptionSvg } from "../../assets/svgs";
 
 const DropDown = (props) => {
+  const Opt = useRef(null);
   const [options, setOptions] = useState("");
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (Opt.current && !Opt.current.contains(e.target)) {
+        setOptions("");
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   const toggleOptions = (index) => {
     if (options === "") {
       setOptions(index);
     } else {
       setOptions("");
-    }
-  };
-
-  const Opt = useRef(null);
-
-  useEffect(() => {
-    document.addEventListener("click", handleClickOutside, true);
-  }, []);
-
-  const handleClickOutside = (e) => {
-    if (!Opt.current.contains(e.target)) {
-      setOptions("");
-    } else {
-        
     }
   };
 
