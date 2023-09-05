@@ -3,7 +3,7 @@
   width: 59px;
   height: 0px;
   top: -16px;
-  right: -80px;
+  right: -70px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -41,6 +41,6 @@
 .c-options {
   position: absolute;
   top: -25px;
-  right: -40px;
+  right: -30px;
   cursor: pointer;
 }

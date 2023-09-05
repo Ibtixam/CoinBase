@@ -98,6 +98,7 @@ input {
   height: 40px;
   border-radius: 20px;
   object-fit: cover;
+  margin-right: 10px;
 }
 
 .img-name {
@@ -144,23 +145,27 @@ input {
   .menu {
     display: none;
   }
+
   .left {
     margin-left: 40px;
   }
+
   nav {
     position: fixed;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .search{
+  .search {
     height: 40px;
     width: 350px;
   }
-  .s-icon{
+
+  .s-icon {
     margin-top: 13px;
   }
-  .input{
+
+  .input {
     margin-top: 11px;
   }
 }

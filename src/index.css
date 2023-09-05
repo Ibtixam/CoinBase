@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 body {
   background: #1E0338;
 }
@@ -21,12 +28,12 @@ main {
   height: 100vh;
 }
 
-:root{
+:root {
   --bgDark: #1E0338;
   --white: white;
   --bgGradient: linear-gradient(185deg, #fd749b 0%, #281ac8 100%);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0px;
 }

@@ -38,6 +38,13 @@
   cursor: pointer;
 }
 
+tr {
+  color: var(--white);
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+}
+
 .trDiv {
   margin-left: 12px;
 }

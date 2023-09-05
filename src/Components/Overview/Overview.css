@@ -60,6 +60,7 @@
   margin-top: 60px;
   margin-left: 35px;
   padding: 10px 0px;
+  gap: 50px;
 }
 
 .circle {
@@ -106,7 +107,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 35px;
-  margin-left: 60px;
+  width: 127px;
 }
 
 .s-title {
