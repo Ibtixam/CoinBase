@@ -67,7 +67,7 @@ export default function Overview(props) {
                     {item.percent} <TriGreenSvg />
                   </p>
                   <GraphSvg className="s-graph" />
-                  <DropDown index={index} Class={"c-options"} />
+                  <DropDown index={index} Class="c-options" value1="View" value2="Delete" />
                 </div>
               </div>
             </div>

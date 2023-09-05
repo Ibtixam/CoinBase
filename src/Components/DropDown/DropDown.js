@@ -28,7 +28,7 @@ const DropDown = (props) => {
     }
   };
 
-  const { index, Class } = props;
+  const { index, Class, value1, value2 } = props;
 
   return (
     <div>
@@ -38,8 +38,8 @@ const DropDown = (props) => {
         onClick={() => toggleOptions(index)}
       />
       <div className={`options ${options === index && "selectoptions"}`}>
-        <div className="edit">Edit</div>
-        <div className="enable">Enable</div>
+        <div className="edit">{value1}</div>
+        <div className="enable">{value2}</div>
       </div>
     </div>
   );
