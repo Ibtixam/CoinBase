@@ -22,9 +22,9 @@ export default function TransactionList() {
         <p className="t-title">Status</p>
         <p className="t-title">Action</p>
       </div>
-      {Data.map((item) => (
+      {Data.map((item, index) => (
         <Transaction
-          key={item.id}
+          key={index}
           status={item.status}
           bg={item.bg}
           name={item.name}

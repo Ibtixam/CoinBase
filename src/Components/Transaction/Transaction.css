@@ -38,7 +38,7 @@
   cursor: pointer;
 }
 
-tr {
+div {
   color: var(--white);
   font-family: Poppins;
   font-size: 12px;

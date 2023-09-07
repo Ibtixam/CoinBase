@@ -22,12 +22,15 @@
   border-bottom: 1px;
   padding: 4px;
   cursor: pointer;
+  color: black;
 }
 
 .enable {
   background: white;
-  padding: 6px 4px;
+  padding: 5px 4px;
   cursor: pointer;
+  color: black;
+
 }
 
 .enable:hover,
@@ -37,7 +40,7 @@
 }
 
 .selectoptions {
-  height: 60px;
+  height: 55px;
   border: 1px solid var(--white);
 }
 
