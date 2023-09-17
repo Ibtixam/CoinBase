@@ -1,44 +1,58 @@
 import React from "react";
 import { LogoSvg, SearchIconSvg, OvalSvg, BellSvg } from "../../assets/svgs";
 import Agent from "../../assets/images/Agent.png";
-import "./Navbar.css";
+import {
+  BellNum,
+  Bellnotification,
+  ImageName,
+  ImageProfile,
+  Input,
+  LeftDiv,
+  Menu,
+  Menuline,
+  Nav,
+  ProfileImage,
+  RightDiv,
+  SearchDiv,
+} from "./styles";
 
 export default function Navbar() {
-
   const handleSidebar = () => {
     let sidebar = document.querySelector("aside");
     sidebar.classList.toggle("sidebar-active");
+  };
+
+  const MenuLine = [];
+
+  for (let index = 0; index < 3; index++) {
+    MenuLine.push(<Menuline key={index} />);
   }
-  
+
   return (
     <header>
-      <nav>
-        <div className="menu" onClick={handleSidebar}>
-          <div className="menuline"></div>
-          <div className="menuline"></div>
-          <div className="menuline"></div>
-        </div>
-        <div className="left">
-          <LogoSvg className="logo" />
-        </div>
-        <div className="right">
+      <Nav>
+        <Menu onClick={handleSidebar}>{MenuLine}</Menu>
+        <LeftDiv>
+          <LogoSvg />
+        </LeftDiv>
+        <RightDiv>
           <div className="searchbar">
-            <div className="search">
-              <SearchIconSvg className="s-icon" />
-              <input type="text" placeholder="Search e.g cards" />
-            </div>
+            <SearchDiv>
+              <SearchIconSvg />
+              <Input type="text" placeholder="Search e.g cards" />
+            </SearchDiv>
           </div>
-          <div className="p-img">
-            <img src={Agent} alt="Img" className="n-img" />
-            <p className="img-name">Agent Rose</p>
-          </div>
-          <div className="bell-notification">
+          <ProfileImage>
+            <img src={Agent} alt="img" className="img-profile"/>
+            <ImageName>Agent Rose</ImageName>
+          </ProfileImage>
+          <Bellnotification>
             <BellSvg className="bell" />
             <OvalSvg className="oval" />
-            <p className="b-num">24</p>
-          </div>
-        </div>
-      </nav>
+            <BellNum>24</BellNum>
+          </Bellnotification>
+        </RightDiv>
+      </Nav>
     </header>
   );
 }

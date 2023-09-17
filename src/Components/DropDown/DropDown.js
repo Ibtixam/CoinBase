@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./DropDown.css";
 import { OptionSvg } from "../../assets/svgs";
+import { Option, OptionButton } from "./styles";
 
 const DropDown = (props) => {
   const Opt = useRef(null);
@@ -29,6 +30,7 @@ const DropDown = (props) => {
   };
 
   const { index, Class, value1, value2 } = props;
+  const selected = options === index;
 
   return (
     <div>
@@ -37,10 +39,10 @@ const DropDown = (props) => {
         className={Class}
         onClick={() => toggleOptions(index)}
       />
-      <div className={`options ${options === index && "selectoptions"}`}>
-        <div className="edit">{value1}</div>
-        <div className="enable">{value2}</div>
-      </div>
+      <Option selected={selected}>
+        <OptionButton>{value1}</OptionButton>
+        <OptionButton>{value2}</OptionButton>
+      </Option>
     </div>
   );
 };

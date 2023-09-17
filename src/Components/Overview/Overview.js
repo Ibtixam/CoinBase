@@ -1,4 +1,5 @@
 import React from "react";
+import DropDown from "../DropDown/DropDown";
 import {
   CircleSvg,
   LoaderSvg,
@@ -9,8 +10,19 @@ import {
   TriangleSvg,
   TriGreenSvg,
 } from "../../assets/svgs";
-import "./Overview.css";
-import DropDown from "../DropDown/DropDown";
+import {
+  Box,
+  BoxStatus,
+  BoxWrapper,
+  CircleWrapper,
+  GraphNumber,
+  GraphWrapper,
+  HeadingText,
+  HeadingWrapper,
+  Numbers,
+  Title,
+  TitleWrapper,
+} from "./styles";
 
 export default function Overview(props) {
   const data = [
@@ -33,51 +45,51 @@ export default function Overview(props) {
 
   return (
     <React.Fragment>
-      <div className="o-heading">
-        <pre className="o-text">Agent Management System Overview</pre>
-        <pre className="o-text2">
-          Accounts |
-          <pre className="o-text3">
-            AGENT ROSE
-            <TriangleSvg style={{ margin: "0px 7px" }} />
-          </pre>
-        </pre>
-      </div>
-      <div className="overview">
-        <div className="o-text-wrapper">
-          <h4 className="o-title">Overview</h4>
+      <HeadingWrapper>
+        <HeadingText>Agent Management   System Overview</HeadingText>
+        <HeadingText>
+          Accounts  |  AGENT ROSE
+          <TriangleSvg style={{ margin: "0px 7px" }} />
+        </HeadingText>
+      </HeadingWrapper>
+      <div>
+        <TitleWrapper>
+          <Title>Overview</Title>
           <CalenderSvg className="calender" />
-        </div>
-        <div className="o-wrapper">
-          {data.map((item, index) => (
-            <div className="o-trade" key={index}>
-              <div className="circle">
-                <CircleSvg className="circle" />
-                <LoaderSvg className="loader" />
-                <VectorSvg className="vector" />
-                <Vector2Svg className="vector2" />
-                <p className="c-text">{item.numbers}</p>
-              </div>
-              <div className="status">
-                <p className="s-title">
-                  Total Number <br /> Of {item.totalnumText}
-                </p>
-                <div className="graphDiv">
-                  <p className="s-num">
-                    {item.percent} <TriGreenSvg />
-                  </p>
-                  <GraphSvg className="s-graph" />
-                  <DropDown
-                    index={index}
-                    Class="c-options"
-                    value1="View"
-                    value2="Delete"
-                  />
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+        </TitleWrapper>
+        <BoxWrapper>
+          {data.map((item, index) => {
+            const { numbers, totalnumText, percent } = item;
+            return (
+              <Box key={index}>
+                <CircleWrapper>
+                  <CircleSvg className="circle" />
+                  <LoaderSvg className="loader" />
+                  <VectorSvg className="vector" />
+                  <Vector2Svg className="vector2" />
+                  <Numbers>{numbers}</Numbers>
+                </CircleWrapper>
+                <BoxStatus>
+                  <Title>
+                    Total Number <br /> Of {totalnumText}
+                  </Title>
+                  <GraphWrapper>
+                    <GraphNumber>
+                      {percent} <TriGreenSvg />
+                    </GraphNumber>
+                    <GraphSvg className="s-graph" />
+                    <DropDown
+                      index={index}
+                      Class="c-options"
+                      value1="View"
+                      value2="Delete"
+                    />
+                  </GraphWrapper>
+                </BoxStatus>
+              </Box>
+            );
+          })}
+        </BoxWrapper>
       </div>
     </React.Fragment>
   );

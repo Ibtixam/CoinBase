@@ -1,4 +1,6 @@
-.user-details {
+import styled from "styled-components";
+
+export const UserWrapper = styled.div`
   width: 900px;
   height: 65px;
   border-radius: 100px;
@@ -10,9 +12,9 @@
   display: flex;
   justify-content: space-between;
   padding: 0px 40px;
-}
+`;
 
-.user-status {
+export const UserStatus = styled.div`
   width: 94px;
   height: 27px;
   color: #fff;
@@ -24,37 +26,30 @@
   text-align: center;
   margin-top: 21px;
   padding-top: 5px;
-}
+`;
 
-.u-img {
+export const UserImage = styled.div`
   padding-left: 50px;
   width: 224px;
-}
+  display: flex;
+  align-items: center;
+  .user-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+`;
 
-.user-img {
-  color: var(--white);
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  margin-left: 12px;
-}
-
-.user-email {
-  color: var(--white);
-  font-family: Poppins;
-  font-size: 12px;
-  font-weight: 400;
-  margin: 23px 0px;
-}
-
-.emailDiv {
+export const UserEmail = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 196px;
-}
+`;
 
-.user-action {
+export const Action = styled.div`
   margin: 23px 10px;
   cursor: pointer;
-}
+`;
