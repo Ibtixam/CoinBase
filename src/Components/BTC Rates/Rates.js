@@ -1,25 +1,33 @@
 import React from "react";
 import "./Rates.css";
 import { OptionSvg, ArrowSvg, ArrowCircleSvg } from "../../assets/svgs";
+import {
+  ArrowWrapper,
+  GradientTitle,
+  HeadingWrapper,
+  Title,
+  TitleWrapper,
+  Wrapper,
+} from "./styles";
 
 export default function Rates() {
   return (
-    <div className="rates">
-      <div className="head-wrapper">
-        <h4 className="r-title">Conversion Rate to Naira</h4>
+    <Wrapper>
+      <HeadingWrapper>
+        <Title>Conversion Rate to Naira</Title>
         <OptionSvg className="r-img" />
-      </div>
-      <div className="title-wrapper">
-        <div className="c-wrapper">
-          <h4 className="c-title">iTunes Card</h4>
+      </HeadingWrapper>
+      <TitleWrapper>
+        <div>
+          <GradientTitle>iTunes Card</GradientTitle>
         </div>
-        <div className="c-wrapper">
-          <h4 className="c-title">Amazon Card</h4>
+        <div>
+          <GradientTitle>Amazon Card</GradientTitle>
         </div>
-        <div className="c-wrapper">
-          <h4 className="c-title">Bitcoin</h4>
+        <div>
+          <GradientTitle>Bitcoin</GradientTitle>
         </div>
-      </div>
+      </TitleWrapper>
       <div className="wrapper">
         <div className="cards-wrapper">
           <div className="r-left">
@@ -63,11 +71,11 @@ export default function Rates() {
             <p className="r-text">N400.00</p>
           </div>
         </div>
-        <div className="arrow-div">
+        <ArrowWrapper>
           <ArrowSvg className="arrow" />
-          <ArrowCircleSvg className="arrow-circle" />
-        </div>
+          <ArrowCircleSvg style={{ position: "relative" }} />
+        </ArrowWrapper>
       </div>
-    </div>
+    </Wrapper>
   );
 }

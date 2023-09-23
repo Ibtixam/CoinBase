@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./DropDown.css";
 import { OptionSvg } from "../../assets/svgs";
 import { Option, OptionButton } from "./styles";
 
-const DropDown = (props) => {
+const DropDown = ({ index, Class, optionList }) => {
   const Opt = useRef(null);
   const [options, setOptions] = useState("");
 
@@ -29,7 +28,6 @@ const DropDown = (props) => {
     }
   };
 
-  const { index, Class, value1, value2 } = props;
   const selected = options === index;
 
   return (
@@ -40,8 +38,10 @@ const DropDown = (props) => {
         onClick={() => toggleOptions(index)}
       />
       <Option selected={selected}>
-        <OptionButton>{value1}</OptionButton>
-        <OptionButton>{value2}</OptionButton>
+        {optionList?.map((item, index) => {
+          const { label } = item;
+          return <OptionButton key={index}>{label}</OptionButton>;
+        })}
       </Option>
     </div>
   );

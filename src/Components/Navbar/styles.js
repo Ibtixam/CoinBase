@@ -39,7 +39,7 @@ export const RightDiv = styled.div`
 `;
 
 export const Menu = styled.div`
-  padding-left: 27px;
+  margin-left: 27px;
   padding-top: 8px;
   cursor: pointer;
   @media screen and (min-width: 1200px) {
@@ -99,15 +99,6 @@ export const ProfileImage = styled.div`
     border-radius: 100px;
     object-fit: cover;
   }
-`;
-
-export const ImageProfile = styled.image`
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  object-fit: cover;
-  margin-right: 10px;
-  background: url("../../assets/images/Agent.png");
 `;
 
 export const ImageName = styled.p`

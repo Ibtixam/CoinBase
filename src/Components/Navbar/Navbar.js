@@ -5,7 +5,6 @@ import {
   BellNum,
   Bellnotification,
   ImageName,
-  ImageProfile,
   Input,
   LeftDiv,
   Menu,
@@ -18,8 +17,8 @@ import {
 
 export default function Navbar() {
   const handleSidebar = () => {
-    let sidebar = document.querySelector("aside");
-    sidebar.classList.toggle("sidebar-active");
+    let sidebar = document.querySelector(".sidebar");
+    sidebar.classList.toggle("menu-active");
   };
 
   const MenuLine = [];
@@ -43,7 +42,7 @@ export default function Navbar() {
             </SearchDiv>
           </div>
           <ProfileImage>
-            <img src={Agent} alt="img" className="img-profile"/>
+            <img src={Agent} alt="img" className="img-profile" />
             <ImageName>Agent Rose</ImageName>
           </ProfileImage>
           <Bellnotification>

@@ -11,7 +11,7 @@ export default function WalletCom() {
           Accounts   |
           <pre className="o-text3">
             AGENT ROSE
-            <TriangleSvg style={{ margin: "0px 7px" }} />
+            <TriangleSvg style={{ margin: "0px 7px", }} />
           </pre>
         </pre>
       </div>

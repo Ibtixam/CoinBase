@@ -17,23 +17,6 @@
   letter-spacing: 0.4px;
 }
 
-.c-title {
-  width: 115px;
-  height: 23px;
-  font-family: Poppins;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  background: linear-gradient(185deg, #fd749b 0%, #281ac8 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-left: 54px;
-  margin-top: 40px;
-  margin-right: 142px;
-}
-
 .cards-wrapper {
   display: flex;
   margin-left: 53px;
@@ -76,33 +59,4 @@
 .title-wrapper {
   display: flex;
   align-items: center;
-}
-
-.head-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.r-img {
-  margin-right: 46px;
-  margin-top: 43px;
-  cursor: pointer;
-}
-
-.arrow-div {
-  display: flex;
-  margin-right: 42px;
-  margin-top: 61px;
-}
-
-.arrow {
-  position: absolute;
-  margin-left: 14px;
-  margin-top: 15px;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.arrow-circle {
-  position: relative;
 }

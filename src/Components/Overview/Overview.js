@@ -45,20 +45,22 @@ export default function Overview(props) {
 
   return (
     <React.Fragment>
-      <HeadingWrapper>
-        <HeadingText>Agent Management   System Overview</HeadingText>
-        <HeadingText>
-          Accounts  |  AGENT ROSE
-          <TriangleSvg style={{ margin: "0px 7px" }} />
-        </HeadingText>
-      </HeadingWrapper>
+      <div>
+        <HeadingWrapper>
+          <HeadingText>Agent Management System Overview</HeadingText>
+          <HeadingText>
+            Accounts | AGENT ROSE
+            <TriangleSvg style={{ margin: "0px 7px" }} />
+          </HeadingText>
+        </HeadingWrapper>
+      </div>
       <div>
         <TitleWrapper>
           <Title>Overview</Title>
           <CalenderSvg className="calender" />
         </TitleWrapper>
         <BoxWrapper>
-          {data.map((item, index) => {
+          {data?.map((item, index) => {
             const { numbers, totalnumText, percent } = item;
             return (
               <Box key={index}>
@@ -81,8 +83,7 @@ export default function Overview(props) {
                     <DropDown
                       index={index}
                       Class="c-options"
-                      value1="View"
-                      value2="Delete"
+                      optionList={[{ label: "Veiw" }, { label: "Delete" }]}
                     />
                   </GraphWrapper>
                 </BoxStatus>

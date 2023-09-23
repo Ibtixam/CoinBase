@@ -24,6 +24,12 @@ main {
   margin-left: 300px;
 }
 
+@media screen and (max-width: 1200px) {
+  main {
+    margin-left: 0px;
+  }
+}
+
 .container {
   padding: 43px 49px;
   width: 100%;
