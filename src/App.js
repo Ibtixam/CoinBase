@@ -9,10 +9,12 @@ import TransactionList from "./Components/TransactionList/TransactionList";
 import Statistics from "./Components/Statistics/Statistics";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Trade from "./Components/Trade/Trade";
+import GlobalStyles from "./Styles/global-styles";
 
 export default function App() {
   return (
     <React.Fragment>
+      <GlobalStyles />
       <Router>
         <Navbar />
         <main>

@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+import { createGlobalStyle } from "styled-components";
+
+export default createGlobalStyle`
 
 * {
   margin: 0;
@@ -45,3 +47,4 @@ main {
 ::-webkit-scrollbar {
   width: 0px;
 }
+`;
