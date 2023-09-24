@@ -1,112 +1,154 @@
 import React, { useState } from "react";
 import { TriangleSvg, OnlineSvg, AttachSvg } from "../../assets/svgs";
-import "./Trade.css";
 import Agent from "../../assets/images/Agent.png";
 import { data } from "./Data";
+import {
+  ChatBox,
+  ChatDetails,
+  ChatWrapper,
+  Chats,
+  HeadingText,
+  HeadingWrapper,
+  InputWrapper,
+  Message,
+  MessageTime,
+  MessageWrapper,
+  PictureDetails,
+  ProfilePicture,
+  ProfilePictureWrapper,
+  SendButton,
+  Title,
+  UnreadLine,
+  UnreadMsgWrapper,
+  UnreadText,
+  Wrapper,
+} from "./styles";
 
 export default function Trade() {
   const [selectedUserId, setSelectedUserId] = useState(null);
   const selectedUser = data.find((user) => user.id === selectedUserId);
 
   return (
-    <div className="trade">
-      <div className="o-heading">
-        <pre className="o-text">Agent Management   Trade</pre>
-        <pre className="o-text2">
-          Accounts   |
-          <pre className="o-text3">
-            AGENT ROSE
+    <div>
+      <div>
+        <HeadingWrapper>
+          <HeadingText>Agent Management System Overview</HeadingText>
+          <HeadingText>
+            Accounts | AGENT ROSE
             <TriangleSvg style={{ margin: "0px 7px" }} />
-          </pre>
-        </pre>
+          </HeadingText>
+        </HeadingWrapper>
       </div>
-      <h4 className="o-title">Trade</h4>
-      <div className="chat-box">
-        <div className="chat-div">
+      <Title>Trade</Title>
+      <Wrapper>
+        <ChatBox>
           <div className="chats">
-            <div className="chat-details">
-              <div className="picture">
-                <img src={Agent} alt="Img" className="n-img" />
-                <OnlineSvg className="online" />
-              </div>
-              <div className="details">
+            <ChatDetails>
+              <ProfilePictureWrapper>
+                <ProfilePicture src={Agent} alt="Img" />
+                <OnlineSvg
+                  style={{ position: "absolute", top: "28px", left: "30px" }}
+                />
+              </ProfilePictureWrapper>
+              <PictureDetails>
                 <p className="c-name">Agent Rose</p>
                 <p className="online-offline">Online</p>
-              </div>
-            </div>
+              </PictureDetails>
+            </ChatDetails>
           </div>
-          {data.map((item, index) => (
-            <div
-              className={`chats ${
-                selectedUserId === item.id && "selected"
-              }`}
-              key={index}
-              onClick={() => setSelectedUserId(item.id)}
-            >
-              <div className="chat-details2">
-                <div className="picture">
-                  <img src={item.picture} alt="Img" className="n-img" />
-                  <img
-                    src={item.onlineicon}
-                    alt="Online Icon"
-                    className="online"
-                  />
-                </div>
-                <div className="details">
-                  <p className="c-name">{item.name}</p>
-                  <p className="online-offline">{item.status}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+          {data.map((item, index) => {
+            const { id, picture, onlineicon, name, status } = item;
+            return (
+              <ChatWrapper
+                selected={selectedUserId === id}
+                key={index}
+                onClick={() => setSelectedUserId(id)}
+              >
+                <Chats>
+                  <ProfilePictureWrapper>
+                    <ProfilePicture src={picture} alt="Img" />
+                    <img
+                      src={onlineicon}
+                      alt="Online Icon"
+                      style={{
+                        position: "absolute",
+                        top: "30px",
+                        left: "30px",
+                      }}
+                    />
+                  </ProfilePictureWrapper>
+                  <PictureDetails>
+                    <p className="c-name">{name}</p>
+                    <p className="online-offline">{status}</p>
+                  </PictureDetails>
+                </Chats>
+              </ChatWrapper>
+            );
+          })}
+        </ChatBox>
         {selectedUser && (
-          <div className="messages">
-                <p className="massage-time">Me, 10:22</p>
-                <div className="msg">
-                  {selectedUser.sender}
-                </div>
-                <p className="massage-time massage-time-reverse">
-                {selectedUser.name}, 10:24
-                </p>
-                <div className="msg msg-reverse">
-                  {selectedUser.reply}
-                </div>
-                <p className="massage-time">Me, 3 minutes ago</p>
-                <div className="msg msg-width">
-                  {selectedUser.sender2}
-                </div>
-                <div className="unread-msg">
-                  <span className="unread-text">Unread</span>
-                  <div className="unread-line"></div>
-                </div>
-                <p className="massage-time">{selectedUser.name}, 9 minutes ago</p>
-                <div className="msg">
-                  {selectedUser.reply2}
-                </div>
-                <p className="massage-time massage-time-reverse">
-                  Agent Rue, 9 minutes ago
-                </p>
-                <div className="msg msg-reverse">
-                {selectedUser.sender3} 
-                </div>
-                <p className="massage-time">{selectedUser.name}, 9 minutes ago</p>
-                <div className="msg">
-                  {selectedUser.reply3}.
-                </div>
-                <div className="inputDiv">
-                  <input
-                    type="text"
-                    name="text"
-                    id="Input"
-                    placeholder="Start typing here"
-                  />
-                  <AttachSvg className="attach" />
-                  <button className="send">Send</button>
-                </div>
-          </div>
+          <MessageWrapper>
+            <MessageTime>Me, 10:22</MessageTime>
+            <Message>{selectedUser.sender}</Message>
+            <MessageTime
+              style={{ display: "flex", flexDirection: "row-reverse" }}
+            >
+              {selectedUser.name}, 10:24
+            </MessageTime>
+            <Message
+              style={{
+                marginLeft: "339px",
+                width: "max-content",
+                height: "48px",
+                borderRadius: "10px",
+                background: "#f6f6f6",
+              }}
+            >
+              {selectedUser.reply}
+            </Message>
+            <MessageTime>Me, 3 minutes ago</MessageTime>
+            <Message style={{ width: "max-content", height: "48px" }}>
+              {selectedUser.sender2}
+            </Message>
+            <UnreadMsgWrapper>
+              <UnreadText>Unread</UnreadText>
+              <UnreadLine className="unread-line"></UnreadLine>
+            </UnreadMsgWrapper>
+            <MessageTime>{selectedUser.name}, 9 minutes ago</MessageTime>
+            <Message>{selectedUser.reply2}</Message>
+            <MessageTime
+              style={{ display: "flex", flexDirection: "row-reverse" }}
+            >
+              Agent Rue, 9 minutes ago
+            </MessageTime>
+            <Message
+              style={{
+                marginLeft: "339px",
+                width: "max-content",
+                height: "48px",
+                borderRadius: "10px",
+                background: "#f6f6f6",
+              }}
+            >
+              {selectedUser.sender3}
+            </Message>
+            <MessageTime>{selectedUser.name}, 9 minutes ago</MessageTime>
+            <Message>{selectedUser.reply3}.</Message>
+            <InputWrapper>
+              <input type="text" name="text" placeholder="Start typing here" />
+              <AttachSvg
+                style={{
+                  position: "absolute",
+                  top: "15px",
+                  right: "110px",
+                  cursor: "pointer",
+                }}
+              />
+              <SendButton>Send</SendButton>
+            </InputWrapper>
+          </MessageWrapper>
         )}
-      </div>
+      </Wrapper>
     </div>
   );
 }
