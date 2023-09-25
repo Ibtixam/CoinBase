@@ -35,6 +35,7 @@ const DropDown = ({ index, Class, optionList }) => {
       <OptionSvg
         ref={Opt}
         className={Class}
+        style={{ cursor: "pointer" }}
         onClick={() => toggleOptions(index)}
       />
       <Option selected={selected}>

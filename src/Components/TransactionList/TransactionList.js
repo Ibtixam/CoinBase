@@ -1,41 +1,42 @@
 import React from "react";
 import { OptionSvg } from "../../assets/svgs";
-import "./TransactionList.css";
 import Transaction from "../Transaction/Transaction";
 import { Data } from "./Data";
 import { Link } from "react-router-dom";
+import {
+  Button,
+  HeadingWrapper,
+  RowTitle,
+  RowTitleWrapper,
+  Title,
+  TransactionWrapper,
+} from "./styles";
 
 export default function TransactionList() {
   return (
-    <div className="tr-list">
-      <div className="head-wrapper">
-        <h4 className="r-title">Transactions</h4>
-        <OptionSvg className="r-img" />
-      </div>
-      <div className="tr-titles">
-        <p className="t-title">Date</p>
-        <p className="t-title">Transaction ID</p>
-        <p className="t-title">Type</p>
-        <p className="t-title">Name</p>
-        <p className="t-title">Value</p>
-        <p className="t-title">Return</p>
-        <p className="t-title">Status</p>
-        <p className="t-title">Action</p>
-      </div>
+    <TransactionWrapper>
+      <HeadingWrapper>
+        <Title>Transactions</Title>
+        <OptionSvg />
+      </HeadingWrapper>
+      <RowTitleWrapper>
+        <RowTitle>Date</RowTitle>
+        <RowTitle>Transaction ID</RowTitle>
+        <RowTitle>Type</RowTitle>
+        <RowTitle>Name</RowTitle>
+        <RowTitle>Value</RowTitle>
+        <RowTitle>Return</RowTitle>
+        <RowTitle>Status</RowTitle>
+        <RowTitle>Action</RowTitle>
+      </RowTitleWrapper>
       {Data.map((item, index) => (
-        <Transaction
-          key={index}
-          status={item.status}
-          bg={item.bg}
-          name={item.name}
-          type={item.type}
-        />
+        <Transaction key={index} item={item} />
       ))}
-      <div className="user-btndiv">
+      <div className="user-wrapper">
         <Link to="/transactionlist">
-          <button className="tr-view-more">View More</button>
+          <Button>View More</Button>
         </Link>
       </div>
-    </div>
+    </TransactionWrapper>
   );
 }

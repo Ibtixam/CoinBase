@@ -24,10 +24,10 @@ export default function UserList() {
         <HeadingTitle>Email</HeadingTitle>
         <HeadingTitle>Action</HeadingTitle>
       </UserHeadings>
-      {UserData.map((item) => (
-        <User key={item.id} data={item} />
+      {UserData.map((item, index) => (
+        <User key={item.id} data={item} index={index} />
       ))}
-      <div className="user-btndiv">
+      <div className="user-wrapper">
         <Link to="/userlist">
           <Button>View More</Button>
         </Link>

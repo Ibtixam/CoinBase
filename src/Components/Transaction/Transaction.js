@@ -1,9 +1,9 @@
 import React from "react";
 import "./Transaction.css";
-import { OptionSvg } from "../../assets/svgs";
+import DropDown from "../DropDown/DropDown";
 
-export default function Transaction(props) {
-  const { type, status, name, bg } = props;
+export default function Transaction({ item, index }) {
+  const { type, status, name, bg } = item;
   return (
     <div className="Transaction">
       <div className="dateDiv">14/01/2019</div>
@@ -17,7 +17,11 @@ export default function Transaction(props) {
       <div className="tr-status tr-title" style={{ background: bg }}>
         {status}
       </div>
-      <OptionSvg className="tr-action tr-title" />
+      <DropDown
+        optionList={[{ label: "Edit" }, { label: "Delete" }]}
+        index={index}
+        style={{ top: "0px", right: "10px", }}
+      />
     </div>
   );
 }

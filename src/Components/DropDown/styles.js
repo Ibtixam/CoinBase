@@ -4,8 +4,6 @@ export const Option = styled.div`
   position: absolute;
   width: 59px;
   height: 0px;
-  top: -16px;
-  right: -70px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;

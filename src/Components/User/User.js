@@ -1,5 +1,5 @@
 import React from "react";
-import { OptionSvg } from "../../assets/svgs";
+import DropDown from "../DropDown/DropDown";
 import {
   Action,
   UserEmail,
@@ -8,7 +8,7 @@ import {
   UserWrapper,
 } from "./styles";
 
-export default function User({ data }) {
+export default function User({ data, index }) {
   const { bg, status, name, email, photo } = data;
   return (
     <UserWrapper>
@@ -19,7 +19,11 @@ export default function User({ data }) {
       </UserImage>
       <UserEmail>{email}</UserEmail>
       <Action>
-        <OptionSvg />
+        <DropDown
+          optionList={[{ label: "Edit" }, { label: "Delete" }]}
+          style={{ top: "0", right: "0" }}
+          index={index}
+        />
       </Action>
     </UserWrapper>
   );
