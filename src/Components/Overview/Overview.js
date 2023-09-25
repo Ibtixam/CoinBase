@@ -84,6 +84,7 @@ export default function Overview(props) {
                       index={index}
                       Class="c-options"
                       optionList={[{ label: "Veiw" }, { label: "Delete" }]}
+                      style={{ top: "-16px", right: "-70px" }}
                     />
                   </GraphWrapper>
                 </BoxStatus>

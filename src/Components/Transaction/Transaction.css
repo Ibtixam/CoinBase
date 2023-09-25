@@ -34,10 +34,6 @@
   padding-top: 5px;
 }
 
-.tr-action {
-  cursor: pointer;
-}
-
 div {
   color: var(--white);
   font-family: Poppins;
@@ -45,7 +41,7 @@ div {
   font-weight: 400;
 }
 
-.trDiv {
+/* .trDiv {
   margin-left: 12px;
 }
 
@@ -63,4 +59,4 @@ div {
 
 .return {
   margin-left: 28px;
-}
+} */
