@@ -18,16 +18,19 @@ export const Option = styled.div`
   ${({ selected }) =>
     selected &&
     css`
-      height: 52px;
+      height: 53px;
       border: 1px solid var(--white);
     `}
 `;
 
 export const OptionButton = styled.div`
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
   background: white;
   padding: 4px;
   cursor: pointer;
-  color: black;
   &:hover {
     background: var(--bgGradient);
     color: white;

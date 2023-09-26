@@ -15,16 +15,6 @@ export const UserWrapper = styled.div`
   }
 `;
 
-export const UserTitle = styled.h4`
-  margin-bottom: 10px;
-  color: var(--white);
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 700;
-  margin-top: 45px;
-  margin-left: 52px;
-  letter-spacing: 0.4px;
-`;
 
 export const UserHeadings = styled.div`
   display: flex;
@@ -42,10 +32,32 @@ export const HeadingTitle = styled.div`
   padding-right: 19px;
 `;
 
+export const HeadingWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  svg {
+    margin-right: 46px;
+    margin-top: 43px;
+    cursor: pointer;
+  }
+`;
+
+export const Title = styled.h4`
+  margin-bottom: 10px;
+  color: var(--white);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 45px;
+  margin-left: 52px;
+  letter-spacing: 0.4px;
+`;
+
 export const Button = styled.button`
   width: 140px;
   height: 45px;
-  background: linear-gradient(185deg, #fd749b 0%, #281ac8 130%);
+  background: var(--bgGradient);
   border: 0;
   outline: 0;
   border-radius: 100px;

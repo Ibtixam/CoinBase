@@ -6,18 +6,19 @@ import { Link } from "react-router-dom";
 import {
   Button,
   HeadingTitle,
+  HeadingWrapper,
+  Title,
   UserHeadings,
-  UserTitle,
   UserWrapper,
 } from "./styles";
 
 export default function UserList() {
   return (
     <UserWrapper>
-      <div className="head-wrapper">
-        <UserTitle>Users</UserTitle>
-        <OptionSvg className="r-img" />
-      </div>
+      <HeadingWrapper>
+        <Title>Users</Title>
+        <OptionSvg />
+      </HeadingWrapper>
       <UserHeadings>
         <HeadingTitle>Account Status</HeadingTitle>
         <HeadingTitle>User Name</HeadingTitle>

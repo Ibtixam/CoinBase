@@ -108,12 +108,6 @@ export const GraphWrapper = styled.p`
     top: 50px;
     left: 58px;
   }
-  .c-options {
-    position: absolute;
-    top: -25px;
-    right: -30px;
-    cursor: pointer;
-  }
 `;
 
 export const GraphNumber = styled.p`

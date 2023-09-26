@@ -41,7 +41,7 @@ export const GradientTitle = styled.h4`
   font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
-  background: linear-gradient(185deg, #fd749b 0%, #281ac8 100%);
+  background: var(--bgGradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -21,7 +21,6 @@ export default function User({ data, index }) {
       <Action>
         <DropDown
           optionList={[{ label: "Edit" }, { label: "Delete" }]}
-          style={{ top: "0", right: "0" }}
           index={index}
         />
       </Action>
