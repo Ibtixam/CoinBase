@@ -93,7 +93,7 @@ export const ChatWrapper = styled.div`
   ${({ selected }) =>
     selected &&
     css`
-      background: linear-gradient(185deg, #fd749b 0%, #281ac8 130%);
+      background: var(--bgGradient)
     `}
 `;
 
@@ -147,7 +147,7 @@ export const UnreadText = styled.span`
   font-weight: 700;
   letter-spacing: 0.375px;
   text-transform: uppercase;
-  background: linear-gradient(185deg, #fd749b 0%, #281ac8 100%);
+  background: var(--bgGradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -156,7 +156,7 @@ export const UnreadText = styled.span`
 export const UnreadLine = styled.div`
   width: 624px;
   height: 2px;
-  background: linear-gradient(185deg, #fd749b 0%, #281ac8 100%);
+  background: var(--bgGradient);
   margin-top: 9px;
   width: 90%;
   height: 2.4px;
@@ -192,7 +192,7 @@ export const SendButton = styled.button`
   width: 73px;
   height: 30px;
   border-radius: 100px;
-  background: linear-gradient(185deg, #fd749b 0%, #281ac8 130%);
+  background: var(--bgGradient);
   border: 0;
   outline: 0;
   color: var(--white);

@@ -59,7 +59,7 @@ export const RowTitle = styled.p`
 export const Button = styled.button`
   width: 140px;
   height: 45px;
-  background: linear-gradient(185deg, #fd749b 0%, #281ac8 130%);
+  background: var(--bgGradient);
   border: 0;
   outline: 0;
   border-radius: 100px;

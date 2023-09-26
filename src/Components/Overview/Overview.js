@@ -25,6 +25,12 @@ import {
 } from "./styles";
 
 export default function Overview(props) {
+  const optionStyle = {
+    position: "absolute",
+    right: "-30px",
+    top: "-36px",
+  };
+
   const data = [
     {
       numbers: 15000,
@@ -80,13 +86,12 @@ export default function Overview(props) {
                       {percent} <TriGreenSvg />
                     </GraphNumber>
                     <GraphSvg className="s-graph" />
-                    <DropDown
-                      index={index}
-                      Class="c-options"
-                      optionList={[{ label: "Veiw" }, { label: "Delete" }]}
-                      style={{ top: "-16px", right: "-70px" }}
-                    />
                   </GraphWrapper>
+                  <DropDown
+                    style={optionStyle}
+                    index={index}
+                    optionList={[{ label: "Veiw" }, { label: "Delete" }]}
+                  />
                 </BoxStatus>
               </Box>
             );

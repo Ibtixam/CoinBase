@@ -39,7 +39,7 @@ export const ButtonWrapper = styled.div`
   ${({ active }) =>
     active &&
     css`
-      background: linear-gradient(185deg, #fd749b 0%, #281ac8 100%);
+      background: var(--bgGradient);
       border-top-right-radius: 100px;
       border-bottom-right-radius: 100px;
       width: 250px;
@@ -51,6 +51,10 @@ export const ItemWrapper = styled.div`
   padding: 18px;
   align-items: center;
   padding-left: 55px;
+  color: var(--white);
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
   svg {
     cursor: pointer;
     margin-right: 25px;

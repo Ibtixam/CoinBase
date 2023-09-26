@@ -1,4 +1,6 @@
-.Transaction {
+import styled from "styled-components";
+
+export const RowWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,16 +13,34 @@
   margin-bottom: 10px;
   padding-left: 7px;
   padding-right: 20px;
-}
+  p {
+    color: var(--white);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .trDiv {
+    margin-left: 12px;
+  }
 
-.Transaction p {
-  color: var(--white);
-  font-family: Poppins;
-  font-size: 12px;
-  font-weight: 400;
-}
+  .type-img {
+    margin-left: 45px;
+  }
 
-.tr-status {
+  .name {
+    margin-left: 30px;
+  }
+
+  .value {
+    margin-left: 20px;
+  }
+
+  .return {
+    margin-left: 28px;
+  }
+`;
+
+export const TransactionStatus = styled.div`
   width: 94px;
   height: 27px;
   color: #fff;
@@ -32,31 +52,4 @@
   text-align: center;
   margin-top: 1px;
   padding-top: 5px;
-}
-
-div {
-  color: var(--white);
-  font-family: Poppins;
-  font-size: 12px;
-  font-weight: 400;
-}
-
-/* .trDiv {
-  margin-left: 12px;
-}
-
-.type-img {
-  margin-left: 45px;
-}
-
-.name {
-  margin-left: 30px;
-}
-
-.value {
-  margin-left: 20px;
-}
-
-.return {
-  margin-left: 28px;
-} */
+`;

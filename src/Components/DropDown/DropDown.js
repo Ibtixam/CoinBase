@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { OptionSvg } from "../../assets/svgs";
 import { Option, OptionButton } from "./styles";
 
-const DropDown = ({ index, Class, optionList }) => {
+const DropDown = ({ index, optionList, style }) => {
   const Opt = useRef(null);
   const [options, setOptions] = useState("");
 
@@ -31,11 +31,10 @@ const DropDown = ({ index, Class, optionList }) => {
   const selected = options === index;
 
   return (
-    <div>
+    <div style={style}>
       <OptionSvg
         ref={Opt}
-        className={Class}
-        style={{ cursor: "pointer" }}
+        style={{ cursor: "pointer", }}
         onClick={() => toggleOptions(index)}
       />
       <Option selected={selected}>

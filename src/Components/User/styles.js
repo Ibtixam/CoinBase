@@ -12,6 +12,10 @@ export const UserWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0px 40px;
+  color: var(--white);
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
 `;
 
 export const UserStatus = styled.div`
