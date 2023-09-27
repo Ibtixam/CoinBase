@@ -1,4 +1,5 @@
 import React from "react";
+import "./Statistics.css";
 import {
   OptionSvg,
   AmazonSvg,
@@ -15,98 +16,71 @@ import {
   AvarageCircle2Svg,
   AvarageCircle3Svg,
 } from "../../assets/svgs";
-import {
-  StatisticsWrapper,
-  HeadingWrapper,
-  Title,
-  StatisticsTitle,
-  GraphWrapper,
-  NumberWrapper,
-  ScoreWrapper,
-  ScoreTitle,
-  ScoreNumber,
-  ProgressBar,
-  CircleWrapper,
-  CompanyWrapper,
-} from "./styles";
 
 export default function Statistics() {
-  const values = [60, 50, 40, 30, 20, 10];
-
-  const GRAPH_SVG = [
-    { Svg: AmazonSvg },
-    { Svg: GoogleSvg },
-    { Svg: ITunesSvg },
-    { Svg: PayoneerSvg },
-    { Svg: BitcoinSvg },
-    { Svg: AmazonSvg },
-    { Svg: TechnoSvg },
-    { Svg: PaypalSvg },
-    { Svg: AliExpressSvg },
-    { Svg: KongaSvg },
-    { Svg: JumiaSvg },
-  ];
-
-  const COMPANY_NAMES = [
-    { name: "Amazon" },
-    { name: "Google" },
-    { name: "iTunes" },
-    { name: "Payoneer" },
-    { name: "Bitcoin" },
-    { name: "Ethereum" },
-    { name: "Tecno" },
-    { name: "Paypal" },
-    { name: "Aliexpress" },
-    { name: "Konga" },
-    { name: "Jumia" },
-  ];
-
   return (
-    <StatisticsWrapper>
-      <HeadingWrapper>
-        <Title>Statistics</Title>
-        <OptionSvg />
-      </HeadingWrapper>
-      <StatisticsTitle>My Own Report</StatisticsTitle>
-      <GraphWrapper className="graph-wrapper">
-        <NumberWrapper>
-          {values.map((item, index) => {
-            return <p key={index}>{item}</p>;
-          })}
-        </NumberWrapper>
-        <div>
-          <ScoreWrapper>
-            <ScoreTitle>Avarage score</ScoreTitle>
-            <ScoreNumber>146/217</ScoreNumber>
-            <ProgressBar>
+    <div className="Statistics">
+      <div className="head-wrapper">
+        <h4 className="r-title s-title">Statistics</h4>
+        <OptionSvg className="r-img" />
+      </div>
+      <p className="statistic-text">My Own Report</p>
+      <div className="graph-wrapper">
+        <div className="numbers">
+          <p className="number-pargraphs">60</p>
+          <p className="number-pargraphs">50</p>
+          <p className="number-pargraphs">40</p>
+          <p className="number-pargraphs">30</p>
+          <p className="number-pargraphs">20</p>
+          <p className="number-pargraphs">10</p>
+        </div>
+        <div className="graph">
+          <div className="score">
+            <p className="score-text">Avarage score</p>
+            <p className="score-num">146/217</p>
+            <div className="progress-bar">
               <div className="fill"></div>
-            </ProgressBar>
-          </ScoreWrapper>
-          <CircleWrapper>
-            <AvarageCircle1Svg />
-            <AvarageCircle2Svg />
-            <AvarageCircle3Svg />
-          </CircleWrapper>
+            </div>
+          </div>
+          <div className="circles">
+            <AvarageCircle1Svg className="avarage-circles circles1" />
+            <AvarageCircle2Svg className="avarage-circles circles2" />
+            <AvarageCircle3Svg className="avarage-circles circles3" />
+          </div>
           <div className="lines"></div>
           <div className="lines"></div>
           <div className="lines"></div>
           <div className="lines"></div>
           <div className="lines"></div>
           <div className="lines"></div>
-          <div style={{ marginLeft: "30px" }}>
-            {GRAPH_SVG.map((element, index) => {
-              const { Svg } = element;
-              return <Svg key={index} className="graph-img" />;
-            })}
+          <div className="company-graph">
+            <AmazonSvg className="graph-img" />
+            <GoogleSvg className="graph-img" />
+            <ITunesSvg className="graph-img" />
+            <PayoneerSvg className="graph-img" />
+            <BitcoinSvg className="graph-img" />
+            <AmazonSvg className="graph-img" />
+            <TechnoSvg className="graph-img" />
+            <PaypalSvg className="graph-img" />
+            <AliExpressSvg className="graph-img" />
+            <KongaSvg className="graph-img" />
+            <JumiaSvg className="graph-img" />
           </div>
         </div>
-      </GraphWrapper>
-      <CompanyWrapper>
-        {COMPANY_NAMES.map((item, index) => {
-          const { name } = item;
-          return <p key={index}>{name}</p>;
-        })}
-      </CompanyWrapper>
-    </StatisticsWrapper>
+      </div>
+      <div className="company-names">
+        <p className="names">Amazon</p>
+        <p className="names">Google</p>
+        <p className="names">iTunes</p>
+        <p className="names">Payoneer</p>
+        <p className="names">Bitcoin</p>
+        <p className="names">Ethereum</p>
+        <p className="names">Tecno</p>
+        <p className="names">Paypal</p>
+        <p className="names">Aliexpress</p>
+        <p className="names">Konga</p>
+        <p className="names">Jumia</p>
+      </div>
+    </div>
   );
 }

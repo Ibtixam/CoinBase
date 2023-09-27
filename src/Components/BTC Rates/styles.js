@@ -22,6 +22,7 @@ export const HeadingWrapper = styled.div`
 export const Title = styled.h4`
   margin-bottom: 10px;
   color: var(--white);
+  font-family: Poppins;
   font-size: 16px;
   font-weight: 700;
   margin-top: 45px;
@@ -37,6 +38,7 @@ export const TitleWrapper = styled.div`
 export const GradientTitle = styled.h4`
   width: 115px;
   height: 23px;
+  font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
   background: var(--bgGradient);

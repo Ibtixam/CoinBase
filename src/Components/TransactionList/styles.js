@@ -26,6 +26,7 @@ export const HeadingWrapper = styled.div`
 export const Title = styled.h4`
   margin-bottom: 10px;
   color: var(--white);
+  font-family: Poppins;
   font-size: 16px;
   font-weight: 700;
   margin-top: 45px;
@@ -49,6 +50,7 @@ export const RowTitleWrapper = styled.div`
 
 export const RowTitle = styled.p`
   color: var(--white);
+  font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
   padding: 0px 25px;
@@ -62,6 +64,7 @@ export const Button = styled.button`
   outline: 0;
   border-radius: 100px;
   color: #fff;
+  font-family: Poppins;
   font-size: 12px;
   margin: 20px 0px;
   cursor: pointer;

@@ -16,6 +16,7 @@ export const SidebarWrapper = styled.div`
   display: inline;
   link {
     color: var(--white);
+    font-family: "Poppins", sans-serif;
     font-size: 13px;
     font-weight: 400;
     cursor: pointer;
@@ -51,6 +52,7 @@ export const ItemWrapper = styled.div`
   align-items: center;
   padding-left: 55px;
   color: var(--white);
+  font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
   svg {
@@ -66,6 +68,7 @@ export const Button = styled.div`
   padding: 12px;
   background: transparent;
   color: var(--white);
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
   margin-top: 75px;
