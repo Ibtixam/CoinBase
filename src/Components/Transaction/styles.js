@@ -15,6 +15,7 @@ export const RowWrapper = styled.div`
   padding-right: 20px;
   p {
     color: var(--white);
+    font-family: Poppins;
     font-size: 12px;
     font-weight: 400;
   }
@@ -43,6 +44,7 @@ export const TransactionStatus = styled.div`
   width: 94px;
   height: 27px;
   color: #fff;
+  font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
   background: #5df888;

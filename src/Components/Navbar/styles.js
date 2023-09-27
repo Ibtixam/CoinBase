@@ -62,6 +62,7 @@ export const Input = styled.input`
   background: transparent;
   margin-left: 70px;
   color: var(--white);
+  font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
   opacity: 0.8;
@@ -102,6 +103,7 @@ export const ProfileImage = styled.div`
 
 export const ImageName = styled.p`
   color: var(--white);
+  font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
@@ -125,6 +127,7 @@ export const Bellnotification = styled.div`
 export const BellNum = styled.p`
   color: var(--white);
   text-align: center;
+  font-family: "Poppins", sans-serif;
   font-size: 6px;
   font-weight: 700;
   margin: -24px 11px;
