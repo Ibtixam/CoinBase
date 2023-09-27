@@ -9,7 +9,6 @@ export const Option = styled.div`
   flex-direction: column;
   color: var(--gray);
   text-align: start;
-  font-family: poppins;
   font-size: 14px;
   font-weight: 400;
   z-index: 12;
@@ -25,7 +24,6 @@ export const Option = styled.div`
 
 export const OptionButton = styled.div`
   color: #000;
-  font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 400;
   background: white;

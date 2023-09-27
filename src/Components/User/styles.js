@@ -13,7 +13,6 @@ export const UserWrapper = styled.div`
   justify-content: space-between;
   padding: 0px 40px;
   color: var(--white);
-  font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
 `;
@@ -22,7 +21,6 @@ export const UserStatus = styled.div`
   width: 94px;
   height: 27px;
   color: #fff;
-  font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
   background: #5df888;

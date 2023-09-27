@@ -52,13 +52,20 @@ export default function Sidebar() {
     },
   ];
 
+  const ScrollToTop = () =>
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+
   return (
     <SidebarWrapper className="sidebar">
       {MenuItems.map((item, index) => {
         const { name, link, Svg } = item;
         const active = location.pathname === link;
         return (
-          <ButtonWrapper key={index} active={active}>
+          <ButtonWrapper key={index} active={active} onClick={ScrollToTop}>
             <Link to={link}>
               <ItemWrapper>
                 <Svg />

@@ -6,6 +6,8 @@ export default createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 #root {
@@ -17,6 +19,7 @@ export default createGlobalStyle`
 
 body {
   background: #1E0338;
+  font-family: 'Poppins', sans-serif;
 }
 
 main {

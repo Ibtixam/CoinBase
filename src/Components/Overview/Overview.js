@@ -53,9 +53,9 @@ export default function Overview(props) {
     <React.Fragment>
       <div>
         <HeadingWrapper>
-          <HeadingText>Agent Management System Overview</HeadingText>
+          <HeadingText>Agent Management   System Overview</HeadingText>
           <HeadingText>
-            Accounts | AGENT ROSE
+            Accounts  |  AGENT ROSE
             <TriangleSvg style={{ margin: "0px 7px" }} />
           </HeadingText>
         </HeadingWrapper>
