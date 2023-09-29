@@ -22,6 +22,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+pre{
+  font-family: 'Poppins', sans-serif;
+}
+
 main {
   display: flex;
   flex-direction: row;
