@@ -9,7 +9,6 @@ export const HeadingWrapper = styled.div`
 
 export const HeadingText = styled.pre`
   color: var(--white);
-  font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
 `;
@@ -27,7 +26,6 @@ export const TitleWrapper = styled.div`
 
 export const Title = styled.h4`
   color: var(--white);
-  font-family: "Poppins";
   font-size: 16px;
   font-weight: 700;
 `;
@@ -80,7 +78,6 @@ export const CircleWrapper = styled.div`
 `;
 
 export const Numbers = styled.p`
-  font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
   background: var(--3, linear-gradient(144deg, #fc58b3 0%, #feae68 100%));
@@ -112,7 +109,6 @@ export const GraphWrapper = styled.p`
 
 export const GraphNumber = styled.p`
   color: #1cd1a1;
-  font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
 `;

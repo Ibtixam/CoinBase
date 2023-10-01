@@ -12,7 +12,7 @@ export const HeadingWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 
-  .r-img {
+  svg {
     margin-right: 46px;
     margin-top: 43px;
     cursor: pointer;
@@ -22,7 +22,6 @@ export const HeadingWrapper = styled.div`
 export const Title = styled.h4`
   margin-bottom: 10px;
   color: var(--white);
-  font-family: Poppins;
   font-size: 16px;
   font-weight: 700;
   margin-top: 45px;
@@ -38,7 +37,6 @@ export const TitleWrapper = styled.div`
 export const GradientTitle = styled.h4`
   width: 115px;
   height: 23px;
-  font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
   background: var(--bgGradient);
@@ -51,7 +49,7 @@ export const GradientTitle = styled.h4`
 export const ArrowWrapper = styled.div`
   display: flex;
   margin: 61px 42px 0 0;
-  
+
   .arrow {
     position: absolute;
     margin-left: 14px;
@@ -59,4 +57,18 @@ export const ArrowWrapper = styled.div`
     z-index: 1;
     cursor: pointer;
   }
+`;
+
+export const CurrencyWrapper = styled.div`
+  display: flex;
+  gap: 45px;
+  width: 280px;
+  margin: 10px 0 0 53px;
+`;
+
+export const CurrencyName = styled.p`
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px 0 16px 0;
 `;

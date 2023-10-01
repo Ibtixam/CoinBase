@@ -59,7 +59,6 @@ export const TitleWrapper = styled.div`
 
 export const Title = styled.h4`
   color: #fff;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 700;
   margin-left: 52px;
@@ -69,7 +68,6 @@ export const ButtonWrapper = styled.div`
   width: 134px;
   height: 42px;
   border-radius: 100px;
-  font-family: Poppins;
   font-size: 10px;
   font-weight: 400;
   border: 0;
@@ -91,10 +89,9 @@ export const ButtonWrapper = styled.div`
 
 export const GradientText = styled.button`
   color: #fff;
-  font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-weight: 400;
-  background: linear-gradient(144deg, #fc58b3 0%, #feae68 100%);
+  background: var(--bgGradient);
   border: 0;
   outline: 0;
   padding: 4px 10px;
@@ -110,14 +107,12 @@ export const TrophyWrapper = styled.div`
 
 export const TrophyTitle = styled.p`
   color: #fff;
-  font-family: "Poppins", sans-serif;
   font-size: 36px;
   font-weight: 700;
 `;
 
 export const TrophyDescription = styled.p`
   color: #fff;
-  font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-weight: 400;
 `;

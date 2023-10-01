@@ -8,7 +8,7 @@ const DropDown = ({ index, optionList, style }) => {
 
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (Opt.current && !Opt.current.contains(e.target)) {
+      if (!Opt.current.contains(e.target)) {
         setOptions("");
       }
     };
@@ -21,10 +21,10 @@ const DropDown = ({ index, optionList, style }) => {
   }, []);
 
   const toggleOptions = (index) => {
-    if (options === "") {
+    if (!options) {
       setOptions(index);
     } else {
-      setOptions("");
+      setOptions('');
     }
   };
 

@@ -1,8 +1,9 @@
 import React from "react";
-import "./Rates.css";
 import { OptionSvg, ArrowSvg, ArrowCircleSvg } from "../../assets/svgs";
 import {
   ArrowWrapper,
+  CurrencyName,
+  CurrencyWrapper,
   GradientTitle,
   HeadingWrapper,
   Title,
@@ -15,7 +16,7 @@ export default function Rates() {
     <Wrapper>
       <HeadingWrapper>
         <Title>Conversion Rate to Naira</Title>
-        <OptionSvg className="r-img" />
+        <OptionSvg />
       </HeadingWrapper>
       <TitleWrapper>
         <div>
@@ -28,49 +29,53 @@ export default function Rates() {
           <GradientTitle>Bitcoin</GradientTitle>
         </div>
       </TitleWrapper>
-      <div className="wrapper">
-        <div className="cards-wrapper">
-          <div className="r-left">
-            <p className="l-text">USA Physical</p>
-            <p className="l-text">USA E-Code card</p>
-            <p className="l-text">UK Physical Card</p>
-            <p className="l-text">UK E-Code Card</p>
+      <div
+        style={{
+          display: "flex",
+        }}
+      >
+        <CurrencyWrapper>
+          <div>
+            <CurrencyName>USA Physical</CurrencyName>
+            <CurrencyName>USA E-Code card</CurrencyName>
+            <CurrencyName>UK Physical Card</CurrencyName>
+            <CurrencyName>UK E-Code Card</CurrencyName>
           </div>
-          <div className="r-right">
-            <p className="r-text">N400.00</p>
-            <p className="r-text">N400.00</p>
-            <p className="r-text">N400.00</p>
-            <p className="r-text">N400.00</p>
+          <div>
+            <CurrencyName>N400.00</CurrencyName>
+            <CurrencyName>N400.00</CurrencyName>
+            <CurrencyName>N400.00</CurrencyName>
+            <CurrencyName>N400.00</CurrencyName>
           </div>
-        </div>
-        <div className="cards-wrapper">
-          <div className="r-left">
-            <p className="l-text">USA Physical</p>
-            <p className="l-text">USA E-Code card</p>
-            <p className="l-text">UK Physical Card</p>
-            <p className="l-text">UK E-Code Card</p>
+        </CurrencyWrapper>
+        <CurrencyWrapper>
+          <div>
+            <CurrencyName>USA Physical</CurrencyName>
+            <CurrencyName>USA E-Code card</CurrencyName>
+            <CurrencyName>UK Physical Card</CurrencyName>
+            <CurrencyName>UK E-Code Card</CurrencyName>
           </div>
-          <div className="r-right">
-            <p className="r-text">N400.00</p>
-            <p className="r-text">N400.00</p>
-            <p className="r-text">N400.00</p>
-            <p className="r-text">N400.00</p>
+          <div>
+            <CurrencyName>N400.00</CurrencyName>
+            <CurrencyName>N400.00</CurrencyName>
+            <CurrencyName>N400.00</CurrencyName>
+            <CurrencyName>N400.00</CurrencyName>
           </div>
-        </div>
-        <div className="cards-wrapper">
-          <div className="r-left">
-            <p className="l-text">Bitcoin BTC</p>
-            <p className="l-text">Bitcoin BTC</p>
-            <p className="l-text">Bitcoin BTC</p>
-            <p className="l-text">Bitcoin BTC</p>
+        </CurrencyWrapper>
+        <CurrencyWrapper>
+          <div>
+            <CurrencyName>Bitcoin BTC</CurrencyName>
+            <CurrencyName>Bitcoin BTC</CurrencyName>
+            <CurrencyName>Bitcoin BTC</CurrencyName>
+            <CurrencyName>Bitcoin BTC</CurrencyName>
           </div>
-          <div className="r-right">
-            <p className="r-text">N400.00</p>
-            <p className="r-text">N400.00</p>
-            <p className="r-text">N400.00</p>
-            <p className="r-text">N400.00</p>
+          <div>
+            <CurrencyName>N400.00</CurrencyName>
+            <CurrencyName>N400.00</CurrencyName>
+            <CurrencyName>N400.00</CurrencyName>
+            <CurrencyName>N400.00</CurrencyName>
           </div>
-        </div>
+        </CurrencyWrapper>
         <ArrowWrapper>
           <ArrowSvg className="arrow" />
           <ArrowCircleSvg style={{ position: "relative" }} />

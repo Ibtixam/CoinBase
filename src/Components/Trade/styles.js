@@ -9,14 +9,12 @@ export const HeadingWrapper = styled.div`
 
 export const HeadingText = styled.pre`
   color: var(--white);
-  font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
 `;
 
 export const Title = styled.h4`
   color: var(--white);
-  font-family: "Poppins";
   font-size: 16px;
   font-weight: 700;
 `;
@@ -77,13 +75,11 @@ export const PictureDetails = styled.div`
   margin-top: 4px;
   .c-name {
     color: var(--white);
-    font-family: Poppins;
     font-size: 12px;
     font-weight: 700;
   }
   .online-offline {
     color: var(--white);
-    font-family: Poppins;
     font-size: 10px;
     font-weight: 400;
   }
@@ -112,7 +108,6 @@ export const MessageWrapper = styled.div`
 
 export const MessageTime = styled.p`
   color: var(--white);
-  font-family: Poppins;
   font-size: 10px;
   font-weight: 400;
   line-height: 17px;
@@ -127,7 +122,6 @@ export const Message = styled.div`
   border-radius: 10px;
   background: #f6f6f6;
   color: #858585;
-  font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
   padding: 15px 18px;
@@ -141,7 +135,6 @@ export const UnreadMsgWrapper = styled.div`
 `;
 
 export const UnreadText = styled.span`
-  font-family: Poppins;
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
@@ -175,7 +168,6 @@ export const InputWrapper = styled.div`
   input {
     width: 73%;
     color: #f0f0f0;
-    font-family: Poppins;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -197,7 +189,6 @@ export const SendButton = styled.button`
   outline: 0;
   color: var(--white);
   text-align: center;
-  font-family: Poppins;
   font-size: 12px;
   font-weight: 700;
   line-height: 22px;
