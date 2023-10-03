@@ -44,3 +44,6 @@ export { ReactComponent as PloshSvg } from "./w-plash.svg";
 export { ReactComponent as Star1Svg } from "./whitestar.svg";
 export { ReactComponent as Star2Svg } from "./star2.svg";
 export { ReactComponent as EarningStarSvg } from "./earningstar.svg";
+export { ReactComponent as SunSvg } from "./sun.svg";
+export { ReactComponent as MoonSvg } from "./moon.svg";
+export { ReactComponent as LightLogoSvg } from "./logolight.svg";

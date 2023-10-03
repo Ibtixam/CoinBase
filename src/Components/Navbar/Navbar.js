@@ -1,6 +1,16 @@
-import React from "react";
-import { LogoSvg, SearchIconSvg, OvalSvg, BellSvg } from "../../assets/svgs";
+import React, { useContext } from "react";
 import Agent from "../../assets/images/Agent.png";
+import Modeontext from "../../Context/Mode/ModeContext";
+import {
+  LogoSvg,
+  SearchIconSvg,
+  OvalSvg,
+  BellSvg,
+  SunSvg,
+  LightLogoSvg,
+  MoonSvg,
+  // MoonSvg,
+} from "../../assets/svgs";
 import {
   BellNum,
   Bellnotification,
@@ -9,6 +19,7 @@ import {
   LeftDiv,
   Menu,
   Menuline,
+  ModeWrapper,
   Nav,
   ProfileImage,
   RightDiv,
@@ -27,13 +38,13 @@ export default function Navbar() {
     MenuLine.push(<Menuline key={index} />);
   }
 
+  const { toggleMode, mode } = useContext(Modeontext);
+
   return (
     <header>
       <Nav>
         <Menu onClick={handleSidebar}>{MenuLine}</Menu>
-        <LeftDiv>
-          <LogoSvg />
-        </LeftDiv>
+        <LeftDiv>{mode === "light" ? <LogoSvg /> : <LightLogoSvg />}</LeftDiv>
         <RightDiv>
           <div className="searchbar">
             <SearchDiv>
@@ -50,6 +61,9 @@ export default function Navbar() {
             <OvalSvg className="oval" />
             <BellNum>24</BellNum>
           </Bellnotification>
+          <ModeWrapper onClick={toggleMode}>
+            {mode === "light" ? <SunSvg /> : <MoonSvg />}
+          </ModeWrapper>
         </RightDiv>
       </Nav>
     </header>

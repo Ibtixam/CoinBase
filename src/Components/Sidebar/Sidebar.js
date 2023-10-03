@@ -67,7 +67,7 @@ export default function Sidebar() {
         return (
           <ButtonWrapper key={index} active={active} onClick={ScrollToTop}>
             <Link to={link}>
-              <ItemWrapper>
+              <ItemWrapper mode={active}>
                 <Svg />
                 {name}
               </ItemWrapper>

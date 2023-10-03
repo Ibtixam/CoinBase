@@ -53,6 +53,11 @@ export const ItemWrapper = styled.div`
   color: var(--white);
   font-size: 12px;
   font-weight: 400;
+  ${({ mode }) =>
+    mode &&
+    css`
+      color: white;
+    `}
   svg {
     cursor: pointer;
     margin-right: 25px;

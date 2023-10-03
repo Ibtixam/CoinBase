@@ -7,6 +7,8 @@ export default createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 #root {
@@ -18,6 +20,7 @@ export default createGlobalStyle`
 
 body {
   background: #1E0338;
+  transition: .2s ease-in;
 }
 
 main {
@@ -43,6 +46,11 @@ main {
   --bgDark: #1E0338;
   --white: white;
   --bgGradient: linear-gradient(185deg, #fd749b 0%, #281ac8 100%);
+}
+
+.dark-mode{
+    --bgDark: #fff;
+    --white: #858585;
 }
 
 ::-webkit-scrollbar {

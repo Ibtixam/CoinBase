@@ -131,3 +131,22 @@ export const BellNum = styled.p`
   position: absolute;
   z-index: 2;
 `;
+
+export const ModeWrapper = styled.div`
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: ease 0.2s;
+
+  &:hover {
+    background: rgb(139 139 139 / 40%);
+  }
+  svg {
+    width: 20px;
+    fill: white;
+    cursor: pointer;
+  }
+`;
