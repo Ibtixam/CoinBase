@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Nav = styled.nav`
   width: 100%;
@@ -78,6 +78,15 @@ export const SearchDiv = styled.div`
   width: 440px;
   border-radius: 100px;
   border: 1px solid white;
+  ${({ mode }) =>
+    mode &&
+    css`
+      border: double 2px transparent;
+      background-image: linear-gradient(white, white), var(--bgGradient);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      background-color: transparent;
+    `}
   svg {
     position: absolute;
     top: 14px;
@@ -123,17 +132,18 @@ export const Bellnotification = styled.div`
 `;
 
 export const BellNum = styled.p`
-  color: var(--white);
+  color: white;
   text-align: center;
   font-size: 6px;
   font-weight: 700;
-  margin: -24px 11px;
   position: absolute;
+  top: 3px;
+  left: 11px;
   z-index: 2;
 `;
 
 export const ModeWrapper = styled.div`
-  padding: 10px;
+  padding: 5px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -145,8 +155,8 @@ export const ModeWrapper = styled.div`
     background: rgb(139 139 139 / 40%);
   }
   svg {
-    width: 20px;
-    fill: white;
+    width: 30px;
+    color: var(--white);
     cursor: pointer;
   }
 `;

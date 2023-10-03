@@ -4,7 +4,7 @@ export const WalletWrapper = styled.div`
   width: 1023px;
   height: 350px;
   border-radius: 10px;
-  border: 1px solid #f0f0f0;
+  border: 2px solid #f0f0f0;
   background: var(--bgDark);
   margin: 33px 0px;
   position: relative;

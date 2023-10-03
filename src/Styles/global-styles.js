@@ -20,7 +20,7 @@ export default createGlobalStyle`
 
 body {
   background: #1E0338;
-  transition: .2s ease-in;
+  transition: .3s ease-in;
 }
 
 main {

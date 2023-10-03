@@ -4,7 +4,7 @@ export const UserWrapper = styled.div`
   width: 900px;
   height: 65px;
   border-radius: 100px;
-  border: 1px solid #f0f0f0;
+  border: 2px solid #f0f0f0;
   background: var(--bgDark);
   margin-top: 10px;
   margin-left: 59px;

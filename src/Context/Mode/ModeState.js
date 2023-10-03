@@ -2,16 +2,15 @@ import React, { useState } from "react";
 import ModeContext from "./ModeContext";
 
 const ModeState = ({ children }) => {
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState(true);
 
   const toggleMode = () => {
-    console.log("first");
-    if (mode === "light") {
-      setMode("dark");
+    if (mode) {
+      setMode(false);
       document.body.style.background = "#FFF9FE";
       document.body.classList.add("dark-mode");
     } else {
-      setMode("light");
+      setMode(true);
       document.body.style.background = "#1E0338";
       document.body.classList.remove("dark-mode");
     }

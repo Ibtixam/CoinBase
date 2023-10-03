@@ -89,7 +89,11 @@ export const ChatWrapper = styled.div`
   ${({ selected }) =>
     selected &&
     css`
-      background: var(--bgGradient)
+      background: var(--bgGradient);
+      .c-name,
+      .online-offline {
+        color: white;
+      }
     `}
 `;
 
@@ -161,7 +165,7 @@ export const InputWrapper = styled.div`
   width: 686px;
   height: 48px;
   border-radius: 100px;
-  border: 1px solid #f0f0f0;
+  border: 2px solid #f0f0f0;
   background: transparent;
   margin-top: 35px;
   position: relative;
@@ -187,7 +191,7 @@ export const SendButton = styled.button`
   background: var(--bgGradient);
   border: 0;
   outline: 0;
-  color: var(--white);
+  color: white;
   text-align: center;
   font-size: 12px;
   font-weight: 700;

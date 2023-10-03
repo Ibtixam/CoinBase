@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   EyeSvg,
@@ -9,7 +9,17 @@ import {
   StaticticSvg,
   SettingsSvg,
 } from "../../assets/svgs";
+import {
+  LightTradeSvg,
+  LightWalletSvg,
+  LightTransactionSvg,
+  LightStatisticsSvg,
+  LightUserSvg,
+  LightSettingsSvg,
+  LightEyeSvg,
+} from "../../assets/lightmodeSvgs";
 import { Button, ButtonWrapper, ItemWrapper, SidebarWrapper } from "./styles";
+import ModeContext from "../../Context/Mode/ModeContext";
 
 export default function Sidebar() {
   let location = useLocation();
@@ -18,37 +28,44 @@ export default function Sidebar() {
     {
       link: "/",
       name: "Overview",
-      Svg: EyeSvg,
+      DarkModeSvg: EyeSvg,
+      LightModeSvg: LightEyeSvg,
     },
     {
       link: "/userlist",
       name: "User",
-      Svg: UserSvg,
+      DarkModeSvg: UserSvg,
+      LightModeSvg: LightUserSvg,
     },
     {
       link: "/trade",
       name: "Trade",
-      Svg: TradeSvg,
+      DarkModeSvg: TradeSvg,
+      LightModeSvg: LightTradeSvg,
     },
     {
       link: "/wallet",
       name: "Wallet",
-      Svg: WalletSvg,
+      DarkModeSvg: WalletSvg,
+      LightModeSvg: LightWalletSvg,
     },
     {
       link: "/transactionlist",
       name: "Transactions",
-      Svg: TransactionSvg,
+      DarkModeSvg: TransactionSvg,
+      LightModeSvg: LightTransactionSvg,
     },
     {
       link: "/statistics",
       name: "Statistics",
-      Svg: StaticticSvg,
+      DarkModeSvg: StaticticSvg,
+      LightModeSvg: LightStatisticsSvg,
     },
     {
       link: "/setting",
       name: "Settings",
-      Svg: SettingsSvg,
+      DarkModeSvg: SettingsSvg,
+      LightModeSvg: LightSettingsSvg,
     },
   ];
 
@@ -59,16 +76,19 @@ export default function Sidebar() {
       behavior: "smooth",
     });
 
+  let Context = useContext(ModeContext);
+  const { mode } = Context;
+
   return (
     <SidebarWrapper className="sidebar">
       {MenuItems.map((item, index) => {
-        const { name, link, Svg } = item;
+        const { name, link, DarkModeSvg, LightModeSvg } = item;
         const active = location.pathname === link;
         return (
           <ButtonWrapper key={index} active={active} onClick={ScrollToTop}>
             <Link to={link}>
               <ItemWrapper mode={active}>
-                <Svg />
+                {mode ? <DarkModeSvg /> : <LightModeSvg />}
                 {name}
               </ItemWrapper>
             </Link>

@@ -7,7 +7,7 @@ export const RowWrapper = styled.div`
   width: 935px;
   height: 65px;
   border-radius: 100px;
-  border: 1px solid #f0f0f0;
+  border: 2px solid #f0f0f0;
   background: var(--bgDark);
   margin: auto;
   margin-bottom: 10px;

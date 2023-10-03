@@ -7,10 +7,13 @@ import {
   OvalSvg,
   BellSvg,
   SunSvg,
-  LightLogoSvg,
-  MoonSvg,
-  // MoonSvg,
 } from "../../assets/svgs";
+import {
+  MoonSvg,
+  LightLogoSvg,
+  LightSearchIconSvg,
+  LightBellSvg,
+} from "../../assets/lightmodeSvgs";
 import {
   BellNum,
   Bellnotification,
@@ -44,10 +47,11 @@ export default function Navbar() {
     <header>
       <Nav>
         <Menu onClick={handleSidebar}>{MenuLine}</Menu>
-        <LeftDiv>{mode === "light" ? <LogoSvg /> : <LightLogoSvg />}</LeftDiv>
+        <LeftDiv>{mode ? <LogoSvg /> : <LightLogoSvg />}</LeftDiv>
         <RightDiv>
           <div className="searchbar">
-            <SearchDiv>
+            <SearchDiv mode={!mode}>
+              {mode ? <SearchIconSvg /> : <LightSearchIconSvg />}
               <SearchIconSvg />
               <Input type="text" placeholder="Search e.g cards" />
             </SearchDiv>
@@ -57,12 +61,16 @@ export default function Navbar() {
             <ImageName>Agent Rose</ImageName>
           </ProfileImage>
           <Bellnotification>
-            <BellSvg className="bell" />
+            {mode ? (
+              <BellSvg className="bell" />
+            ) : (
+              <LightBellSvg className="bell" />
+            )}
             <OvalSvg className="oval" />
             <BellNum>24</BellNum>
           </Bellnotification>
           <ModeWrapper onClick={toggleMode}>
-            {mode === "light" ? <SunSvg /> : <MoonSvg />}
+            {mode ? <SunSvg /> : <MoonSvg />}
           </ModeWrapper>
         </RightDiv>
       </Nav>
