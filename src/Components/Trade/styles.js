@@ -171,7 +171,7 @@ export const InputWrapper = styled.div`
   position: relative;
   input {
     width: 73%;
-    color: #f0f0f0;
+    color: var(--white);
     font-size: 12px;
     font-style: normal;
     font-weight: 400;

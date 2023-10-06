@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StatisticsWrapper = styled.div`
   width: 100%;
@@ -11,7 +11,7 @@ export const StatisticsWrapper = styled.div`
   .lines {
     width: 861.169px;
     height: 0.966px;
-    border: dashed #462764 0.5px;
+    border: 0.5px dashed #462764;
     margin-top: 32px;
     margin-bottom: 53px;
   }
@@ -19,6 +19,14 @@ export const StatisticsWrapper = styled.div`
     margin-top: -300px;
     margin-right: 63px;
   }
+
+  ${({ mode }) =>
+    mode &&
+    css`
+      .lines {
+        border: 0.5px dashed #dedede;
+      }
+    `}
 `;
 
 export const HeadingWrapper = styled.div`

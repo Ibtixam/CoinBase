@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import DropDown from "../DropDown/DropDown";
 import {
   CircleSvg,
@@ -23,8 +23,12 @@ import {
   Title,
   TitleWrapper,
 } from "./styles";
+import { LightChartSvg } from "../../assets/lightmodeSvgs/index";
+import ModeContext from "../../Context/Mode/ModeContext";
 
-export default function Overview(props) {
+export default function Overview() {
+  const { mode } = useContext(ModeContext);
+
   const optionStyle = {
     position: "absolute",
     right: "-30px",
@@ -53,9 +57,9 @@ export default function Overview(props) {
     <React.Fragment>
       <div>
         <HeadingWrapper>
-          <HeadingText>Agent Management   System Overview</HeadingText>
+          <HeadingText>Agent Management System Overview</HeadingText>
           <HeadingText>
-            Accounts  |  AGENT ROSE
+            Accounts | AGENT ROSE
             <TriangleSvg style={{ margin: "0px 7px" }} />
           </HeadingText>
         </HeadingWrapper>
@@ -83,9 +87,14 @@ export default function Overview(props) {
                   </Title>
                   <GraphWrapper>
                     <GraphNumber>
-                      {percent} <TriGreenSvg />
+                      {percent}
+                      <TriGreenSvg />
                     </GraphNumber>
-                    <GraphSvg className="s-graph" />
+                    {mode ? (
+                      <GraphSvg className="s-graph" />
+                    ) : (
+                      <LightChartSvg className="s-graph" />
+                    )}
                   </GraphWrapper>
                   <DropDown
                     style={optionStyle}

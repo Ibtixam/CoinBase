@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   WalletShapeSvg,
   TrophySvg,
@@ -18,10 +18,12 @@ import {
   TrophyWrapper,
   WalletWrapper,
 } from "./styles";
+import ModeContext from "../../Context/Mode/ModeContext";
 
 export default function Wallet() {
+  const { mode } = useContext(ModeContext);
   return (
-    <WalletWrapper>
+    <WalletWrapper mode={!mode}>
       <TitleWrapper>
         <Title>Wallet</Title>
         <ButtonWrapper>

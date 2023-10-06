@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const WalletWrapper = styled.div`
   width: 1023px;
@@ -9,6 +9,13 @@ export const WalletWrapper = styled.div`
   margin: 33px 0px;
   position: relative;
   overflow: hidden;
+
+  ${({ mode }) =>
+    mode &&
+    css`
+      background: var(--bgGradient);
+    `}
+
   .w-texts {
     margin-left: 25px;
   }

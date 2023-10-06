@@ -88,7 +88,7 @@ export default function Sidebar() {
           <ButtonWrapper key={index} active={active} onClick={ScrollToTop}>
             <Link to={link}>
               <ItemWrapper mode={active}>
-                {mode ? <DarkModeSvg /> : <LightModeSvg />}
+                {mode || active ? <DarkModeSvg /> : <LightModeSvg />}
                 {name}
               </ItemWrapper>
             </Link>

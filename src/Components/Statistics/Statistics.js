@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   OptionSvg,
   AmazonSvg,
@@ -29,6 +29,7 @@ import {
   CircleWrapper,
   CompanyWrapper,
 } from "./styles";
+import ModeContext from "../../Context/Mode/ModeContext";
 
 export default function Statistics() {
   const values = [60, 50, 40, 30, 20, 10];
@@ -61,8 +62,10 @@ export default function Statistics() {
     { name: "Jumia" },
   ];
 
+  const { mode } = useContext(ModeContext);
+
   return (
-    <StatisticsWrapper>
+    <StatisticsWrapper mode={!mode}>
       <HeadingWrapper>
         <Title>Statistics</Title>
         <OptionSvg />

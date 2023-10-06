@@ -6,7 +6,7 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border: 2px solid #f7f7f7;
+  border: 2px solid #f0f0f0;
   background: var(--bgDark);
   position: fixed;
   top: 0;
@@ -143,7 +143,7 @@ export const BellNum = styled.p`
 `;
 
 export const ModeWrapper = styled.div`
-  padding: 5px;
+  padding: 7px;
   border-radius: 50%;
   display: flex;
   justify-content: center;

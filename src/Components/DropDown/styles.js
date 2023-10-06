@@ -13,12 +13,13 @@ export const Option = styled.div`
   font-weight: 400;
   z-index: 12;
   transition: height 0.2s, border 0.3s;
+  border: 0px solid #dedede;
   overflow: hidden;
   ${({ selected }) =>
     selected &&
     css`
       height: 53px;
-      border: 1px solid var(--white);
+      border: 1px solid #dedede;
     `}
 `;
 

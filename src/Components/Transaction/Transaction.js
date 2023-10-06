@@ -14,9 +14,7 @@ export default function Transaction({ item, index }) {
       <p className="name">{name}</p>
       <p className="value">$100</p>
       <p className="return">#18000</p>
-      <TransactionStatus style={{ background: bg }}>
-        {status}
-      </TransactionStatus>
+      <TransactionStatus style={{ background: bg }}>{status}</TransactionStatus>
       <DropDown
         optionList={[{ label: "Edit" }, { label: "Delete" }]}
         index={index}
