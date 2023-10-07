@@ -7,6 +7,4 @@ export { ReactComponent as LightStatisticsSvg } from "./statistics.svg";
 export { ReactComponent as LightUserSvg } from "./user.svg";
 export { ReactComponent as LightSettingsSvg } from "./settings.svg";
 export { ReactComponent as LightEyeSvg } from "./eye.svg";
-export { ReactComponent as LightSearchIconSvg } from "./search-icon.svg";
-export { ReactComponent as LightBellSvg } from "./Bell.svg";
 export { ReactComponent as LightChartSvg } from "./Chart.svg";

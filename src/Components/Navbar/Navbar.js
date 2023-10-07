@@ -8,12 +8,7 @@ import {
   BellSvg,
   SunSvg,
 } from "../../assets/svgs";
-import {
-  MoonSvg,
-  LightLogoSvg,
-  LightSearchIconSvg,
-  LightBellSvg,
-} from "../../assets/lightmodeSvgs";
+import { MoonSvg, LightLogoSvg } from "../../assets/lightmodeSvgs";
 import {
   BellNum,
   Bellnotification,
@@ -51,7 +46,7 @@ export default function Navbar() {
         <RightDiv>
           <div className="searchbar">
             <SearchDiv mode={!mode}>
-              {mode ? <SearchIconSvg /> : <LightSearchIconSvg />}
+              <SearchIconSvg />
               <SearchIconSvg />
               <Input type="text" placeholder="Search e.g cards" />
             </SearchDiv>
@@ -61,11 +56,7 @@ export default function Navbar() {
             <ImageName>Agent Rose</ImageName>
           </ProfileImage>
           <Bellnotification>
-            {mode ? (
-              <BellSvg className="bell" />
-            ) : (
-              <LightBellSvg className="bell" />
-            )}
+            <BellSvg className="bell" />
             <OvalSvg className="oval" />
             <BellNum>24</BellNum>
           </Bellnotification>
