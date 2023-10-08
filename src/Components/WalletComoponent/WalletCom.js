@@ -12,13 +12,13 @@ export default function WalletCom() {
   `;
 
   const HeadingText = styled.pre`
-    color: var(--white);
+    color: var(--secondary-color);
     font-size: 12px;
     font-weight: 700;
   `;
 
   const Title = styled.h4`
-    color: var(--white);
+    color: var(--secondary-color);
     font-size: 16px;
     font-weight: 700;
   `;

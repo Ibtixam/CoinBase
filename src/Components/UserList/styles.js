@@ -5,7 +5,7 @@ export const UserWrapper = styled.div`
   height: 644px;
   border-radius: 10px;
   border: 2px solid #f0f0f0;
-  background: var(--bgDark);
+  background: var(--primary-color);
   .head-wrapper {
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@ export const UserHeadings = styled.div`
 `;
 
 export const HeadingTitle = styled.div`
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 12px;
   font-weight: 700;
   padding-right: 19px;
@@ -44,7 +44,7 @@ export const HeadingWrapper = styled.div`
 
 export const Title = styled.h4`
   margin-bottom: 10px;
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 16px;
   font-weight: 700;
   margin-top: 45px;

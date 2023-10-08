@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-evenly;
   border: 2px solid #f0f0f0;
-  background: var(--bgDark);
+  background: var(--primary-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -61,7 +61,7 @@ export const Input = styled.input`
   outline: 0;
   background: transparent;
   margin-left: 70px;
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 12px;
   font-weight: 400;
   opacity: 0.8;
@@ -110,7 +110,7 @@ export const ProfileImage = styled.div`
 `;
 
 export const ImageName = styled.p`
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
@@ -156,7 +156,7 @@ export const ModeWrapper = styled.div`
   }
   svg {
     width: 30px;
-    color: var(--white);
+    color: var(--secondary-color);
     cursor: pointer;
   }
 `;

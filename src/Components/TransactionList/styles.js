@@ -5,7 +5,7 @@ export const TransactionWrapper = styled.div`
   height: 570px;
   border-radius: 10px;
   border: 2px solid #f0f0f0;
-  background: var(--bgDark);
+  background: var(--primary-color);
   margin-top: 33px;
   .user-wrapper {
     text-align: center;
@@ -25,7 +25,7 @@ export const HeadingWrapper = styled.div`
 
 export const Title = styled.h4`
   margin-bottom: 10px;
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 16px;
   font-weight: 700;
   margin-top: 45px;
@@ -48,7 +48,7 @@ export const RowTitleWrapper = styled.div`
 `;
 
 export const RowTitle = styled.p`
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 12px;
   font-weight: 700;
   padding: 0px 25px;

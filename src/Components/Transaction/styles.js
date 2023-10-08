@@ -8,13 +8,13 @@ export const RowWrapper = styled.div`
   height: 65px;
   border-radius: 100px;
   border: 2px solid #f0f0f0;
-  background: var(--bgDark);
+  background: var(--primary-color);
   margin: auto;
   margin-bottom: 10px;
   padding-left: 7px;
   padding-right: 20px;
   p {
-    color: var(--white);
+    color: var(--secondary-color);
     font-size: 12px;
     font-weight: 400;
   }

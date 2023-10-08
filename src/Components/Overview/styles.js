@@ -8,7 +8,7 @@ export const HeadingWrapper = styled.div`
 `;
 
 export const HeadingText = styled.pre`
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 12px;
   font-weight: 700;
 `;
@@ -25,7 +25,7 @@ export const TitleWrapper = styled.div`
 `;
 
 export const Title = styled.h4`
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 16px;
   font-weight: 700;
 `;
@@ -42,7 +42,7 @@ export const Box = styled.div`
   height: 170px;
   border-radius: 10px;
   border: 2px solid #f0f0f0;
-  background: var(--bgDark);
+  background: var(--primary-color);
   margin-top: 60px;
   margin-left: 35px;
   padding: 10px 0px;

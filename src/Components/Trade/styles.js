@@ -8,13 +8,13 @@ export const HeadingWrapper = styled.div`
 `;
 
 export const HeadingText = styled.pre`
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 12px;
   font-weight: 700;
 `;
 
 export const Title = styled.h4`
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 16px;
   font-weight: 700;
 `;
@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
   height: 750px;
   border-radius: 10px;
   border: 2px solid #f0f0f0;
-  background: var(--bgDark);
+  background: var(--primary-color);
   margin-top: 24px;
   display: flex;
   overflow: hidden;
@@ -74,12 +74,12 @@ export const ProfilePicture = styled.img`
 export const PictureDetails = styled.div`
   margin-top: 4px;
   .c-name {
-    color: var(--white);
+    color: var(--secondary-color);
     font-size: 12px;
     font-weight: 700;
   }
   .online-offline {
-    color: var(--white);
+    color: var(--secondary-color);
     font-size: 10px;
     font-weight: 400;
   }
@@ -111,7 +111,7 @@ export const MessageWrapper = styled.div`
 `;
 
 export const MessageTime = styled.p`
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 10px;
   font-weight: 400;
   line-height: 17px;
@@ -171,7 +171,7 @@ export const InputWrapper = styled.div`
   position: relative;
   input {
     width: 73%;
-    color: var(--white);
+    color: var(--secondary-color);
     font-size: 12px;
     font-style: normal;
     font-weight: 400;

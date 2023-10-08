@@ -5,14 +5,14 @@ export const UserWrapper = styled.div`
   height: 65px;
   border-radius: 100px;
   border: 2px solid #f0f0f0;
-  background: var(--bgDark);
+  background: var(--primary-color);
   margin-top: 10px;
   margin-left: 59px;
   margin-right: 52px;
   display: flex;
   justify-content: space-between;
   padding: 0px 40px;
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 12px;
   font-weight: 400;
 `;

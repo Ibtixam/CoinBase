@@ -5,7 +5,7 @@ export const StatisticsWrapper = styled.div`
   height: 580px;
   border-radius: 10px;
   border: 2px solid #f0f0f0;
-  background: var(--bgDark);
+  background: var(--primary-color);
   margin-bottom: 33px;
   position: relative;
   .lines {
@@ -42,7 +42,7 @@ export const HeadingWrapper = styled.div`
 
 export const Title = styled.h4`
   margin-bottom: 10px;
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 16px;
   font-weight: 700;
   margin-top: 45px;
@@ -52,7 +52,7 @@ export const Title = styled.h4`
 
 export const StatisticsTitle = styled.p`
   display: block;
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 12px;
   font-weight: 700;
   margin-top: 30px;
@@ -71,7 +71,7 @@ export const NumberWrapper = styled.div`
   margin-left: 68px;
   border-right: #dee6e9 3px solid;
   p {
-    color: var(--white);
+    color: var(--secondary-color);
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 37px;
@@ -137,7 +137,7 @@ export const CompanyWrapper = styled.div`
   width: 89%;
   margin-left: 85px;
   p {
-    color: var(--white);
+    color: var(--secondary-color);
     font-size: 12px;
     font-weight: 400;
   }

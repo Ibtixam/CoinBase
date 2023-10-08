@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   height: 325px;
   border-radius: 10px;
   border: 2px solid #f0f0f0;
-  background: var(--bgDark);
+  background: var(--primary-color);
 `;
 
 export const HeadingWrapper = styled.div`
@@ -21,7 +21,7 @@ export const HeadingWrapper = styled.div`
 
 export const Title = styled.h4`
   margin-bottom: 10px;
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 16px;
   font-weight: 700;
   margin-top: 45px;
@@ -67,7 +67,7 @@ export const CurrencyWrapper = styled.div`
 `;
 
 export const CurrencyName = styled.p`
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 12px;
   font-weight: 400;
   margin: 10px 0 16px 0;

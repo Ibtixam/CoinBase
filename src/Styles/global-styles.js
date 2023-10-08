@@ -9,6 +9,7 @@ export default createGlobalStyle`
   font-family: 'Poppins', sans-serif;
   user-select: none;
   -webkit-user-drag: none;
+  transition: ease .3s;
 }
 
 #root {
@@ -19,8 +20,7 @@ export default createGlobalStyle`
 }
 
 body {
-  background: #1E0338;
-  transition: .3s ease-in;
+  background: var(--bg-color);
 }
 
 main {
@@ -43,14 +43,16 @@ main {
 }
 
 :root {
-  --bgDark: #1E0338;
-  --white: white;
+  --primary-color: #1E0338;
+  --secondary-color: white;
   --bgGradient: linear-gradient(185deg, #fd749b 0%, #281ac8 100%);
+  --bg-color: #1E0338;
 }
 
-.dark-mode{
-    --bgDark: #fff;
-    --white: #858585;
+.light-mode{
+    --primary-color: #fff;
+    --secondary-color: #858585;
+    --bg-color: #FFF9FE;
 }
 
 ::-webkit-scrollbar {

@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const SidebarWrapper = styled.div`
   border: 2px solid #f0f0f0;
-  background: var(--bgDark);
+  background: var(--primary-color);
   width: 300px;
   height: 90%;
   border-top: 0;
@@ -12,10 +12,9 @@ export const SidebarWrapper = styled.div`
   overflow: scroll;
   z-index: 100;
   margin-top: 83px;
-  transition: ease-in-out all 0.4s;
   display: inline;
   link {
-    color: var(--white);
+    color: var(--secondary-color);
     font-size: 13px;
     font-weight: 400;
     cursor: pointer;
@@ -50,7 +49,7 @@ export const ItemWrapper = styled.div`
   padding: 18px;
   align-items: center;
   padding-left: 55px;
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 12px;
   font-weight: 400;
   ${({ mode }) =>
@@ -70,7 +69,7 @@ export const Button = styled.div`
   display: block;
   padding: 12px;
   background: transparent;
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 14px;
   font-weight: 400;
   margin-top: 75px;

@@ -5,7 +5,7 @@ export const WalletWrapper = styled.div`
   height: 350px;
   border-radius: 10px;
   border: 2px solid #f0f0f0;
-  background: var(--bgDark);
+  background: var(--primary-color);
   margin: 33px 0px;
   position: relative;
   overflow: hidden;
