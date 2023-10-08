@@ -23,7 +23,10 @@ import {
   Title,
   TitleWrapper,
 } from "./styles";
-import { LightChartSvg } from "../../assets/lightmodeSvgs/index";
+import {
+  LightCalenderSvg,
+  LightChartSvg,
+} from "../../assets/lightmodeSvgs/index";
 import ModeContext from "../../Context/Mode/ModeContext";
 
 export default function Overview() {
@@ -57,9 +60,9 @@ export default function Overview() {
     <React.Fragment>
       <div>
         <HeadingWrapper>
-          <HeadingText>Agent Management System Overview</HeadingText>
+          <HeadingText>Agent Management   System Overview</HeadingText>
           <HeadingText>
-            Accounts | AGENT ROSE
+            Accounts  |  AGENT ROSE
             <TriangleSvg style={{ margin: "0px 7px" }} />
           </HeadingText>
         </HeadingWrapper>
@@ -67,7 +70,7 @@ export default function Overview() {
       <div>
         <TitleWrapper>
           <Title>Overview</Title>
-          <CalenderSvg className="calender" />
+          {mode ? <CalenderSvg className="calender" /> : <LightCalenderSvg />}
         </TitleWrapper>
         <BoxWrapper>
           {data?.map((item, index) => {
@@ -88,7 +91,7 @@ export default function Overview() {
                   <GraphWrapper>
                     <GraphNumber>
                       {percent}
-                      <TriGreenSvg />
+                      <TriGreenSvg style={{ marginLeft: "4px" }} />
                     </GraphNumber>
                     {mode ? (
                       <GraphSvg className="s-graph" />
