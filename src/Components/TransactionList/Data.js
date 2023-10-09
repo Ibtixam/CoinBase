@@ -1,32 +1,29 @@
-import { Wallet, Bitcoin } from "../../assets/images";
+import { Wallet, Bitcoin } from "../../assets/svgs";
+// import { LightWalletSvg } from "../../assets/lightmodeSvgs";
 
 export const Data = [
-    {
-        id: "0",
-        status: "Completed",
-        name: "Bitcion",
-        bg: "#5DF888",
-        type:  Bitcoin,
-    },
-    {
-        id: "1",
-        status: "Failed",
-        name: "Amazon",
-        bg: "#F85D5D",
-        type: Wallet,
-    },
-    {
-        id: "2",
-        status: "In Progress",
-        name: "Bitcion",
-        bg: "linear-gradient(185deg, #FD749B 0%, #281AC8 130%)",
-        type: Bitcoin
-    },
-    {
-        id: "3",
-        status: "Completed",
-        name: "Bitcion",
-        bg: "#5DF888",
-        type: Wallet,
-    }
-]
+  {
+    status: "Completed",
+    name: "Bitcion",
+    bg: "#5DF888",
+    Svg: Bitcoin,
+  },
+  {
+    status: "Failed",
+    name: "Amazon",
+    bg: "#F85D5D",
+    Svg: Wallet,
+  },
+  {
+    status: "In Progress",
+    name: "Bitcion",
+    bg: "linear-gradient(185deg, #FD749B 0%, #281AC8 130%)",
+    Svg: Bitcoin,
+  },
+  {
+    status: "Completed",
+    name: "Bitcion",
+    bg: "#5DF888",
+    Svg: Wallet,
+  },
+];

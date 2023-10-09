@@ -45,3 +45,5 @@ export { ReactComponent as Star1Svg } from "./whitestar.svg";
 export { ReactComponent as Star2Svg } from "./star2.svg";
 export { ReactComponent as EarningStarSvg } from "./earningstar.svg";
 export { ReactComponent as SunSvg } from "./sun.svg";
+export { ReactComponent as Wallet } from "../svgs/wallet.svg";
+export { ReactComponent as Bitcoin } from "../svgs/bitcoin.svg";

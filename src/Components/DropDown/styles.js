@@ -33,5 +33,6 @@ export const OptionButton = styled.div`
   &:hover {
     background: var(--bgGradient);
     color: white;
+    transition: none;
   }
 `;

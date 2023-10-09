@@ -13,8 +13,8 @@ const ModeState = ({ children }) => {
 
   useEffect(() => {
     document.body.classList.toggle("light-mode", mode);
-    setMode(!mode)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    setMode(!mode);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

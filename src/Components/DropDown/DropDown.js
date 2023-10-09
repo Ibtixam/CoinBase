@@ -24,7 +24,7 @@ const DropDown = ({ index, optionList, style }) => {
     if (!options) {
       setOptions(index);
     } else {
-      setOptions('');
+      setOptions("");
     }
   };
 
@@ -34,7 +34,7 @@ const DropDown = ({ index, optionList, style }) => {
     <div style={style}>
       <OptionSvg
         ref={Opt}
-        style={{ cursor: "pointer", }}
+        style={{ cursor: "pointer" }}
         onClick={() => toggleOptions(index)}
       />
       <Option selected={selected}>
