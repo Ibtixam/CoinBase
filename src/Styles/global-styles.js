@@ -39,7 +39,6 @@ main {
 .container {
   padding: 43px 49px;
   width: 100%;
-  height: 100vh;
 }
 
 :root {
