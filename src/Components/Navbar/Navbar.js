@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Agent from "../../assets/images/Agent.png";
-import Modeontext from "../../Context/Mode/ModeContext";
+import ModeContext from "../../Context/Mode/ModeContext";
 import {
   LogoSvg,
   SearchIconSvg,
@@ -36,7 +36,7 @@ export default function Navbar() {
     MenuLine.push(<Menuline key={index} />);
   }
 
-  const { toggleMode, mode } = useContext(Modeontext);
+  const { toggleMode, mode } = useContext(ModeContext);
 
   return (
     <header>

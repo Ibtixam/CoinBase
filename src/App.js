@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import Home from "./Components/Home/home";
@@ -10,32 +10,36 @@ import Statistics from "./Components/Statistics/Statistics";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Trade from "./Components/Trade/Trade";
 import GlobalStyles from "./Styles/global-styles";
-import ModeState from "./Context/Mode/ModeState";
+import { Spinner } from "./Components/Spinner";
+import MoodContext from "./Context/Mode/ModeContext";
 
 export default function App() {
+  const { loading } = useContext(MoodContext);
   return (
     <React.Fragment>
-      <ModeState>
-        <GlobalStyles />
-        <Router>
+      <GlobalStyles />
+      <Router>
+        <main>
           <Navbar />
-          <main>
-            <Sidebar />
+          <Sidebar />
+          {!loading ? (
             <div className="container">
               <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/userlist" element={<UserList />} />
-                <Route path="/trade" element={<Trade />} />
-                <Route path="/rates" element={<Rates />} />
-                <Route path="/wallet" element={<Wallet />} />
-                <Route path="/statistics" element={<Statistics />} />
-                <Route path="/transactionList" element={<TransactionList />} />
-                <Route path="/setting" element={<Home />} />
+                <Route path="/" Component={Home} />
+                <Route path="/userlist" Component={UserList} />
+                <Route path="/trade" Component={Trade} />
+                <Route path="/rates" Component={Rates} />
+                <Route path="/wallet" Component={Wallet} />
+                <Route path="/statistics" Component={Statistics} />
+                <Route path="/transactionList" Component={TransactionList} />
+                <Route path="/setting" Component={Home} />
               </Routes>
             </div>
-          </main>
-        </Router>
-      </ModeState>
+          ) : (
+            <Spinner />
+          )}
+        </main>
+      </Router>
     </React.Fragment>
   );
 }

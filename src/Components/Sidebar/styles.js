@@ -34,6 +34,7 @@ export const SidebarWrapper = styled.div`
 
 export const ButtonWrapper = styled.div`
   margin-top: 20px;
+  transition: none;
   ${({ active }) =>
     active &&
     css`
