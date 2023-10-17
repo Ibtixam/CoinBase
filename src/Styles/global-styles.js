@@ -16,7 +16,6 @@ export default createGlobalStyle`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 body {
@@ -26,8 +25,7 @@ body {
 main {
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
-  margin-left: 300px;
+  margin: 100px 0 0 300px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -38,7 +36,6 @@ main {
 
 .container {
   padding: 43px 49px;
-  width: 100%;
 }
 
 :root {

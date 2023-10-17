@@ -19,10 +19,10 @@ export default function App() {
     <React.Fragment>
       <GlobalStyles />
       <Router>
-        <main>
-          <Navbar />
-          <Sidebar />
-          {!loading ? (
+        <Navbar />
+        <Sidebar />
+        {!loading ? (
+          <main>
             <div className="container">
               <Routes>
                 <Route path="/" Component={Home} />
@@ -35,10 +35,10 @@ export default function App() {
                 <Route path="/setting" Component={Home} />
               </Routes>
             </div>
-          ) : (
-            <Spinner />
-          )}
-        </main>
+          </main>
+        ) : (
+          <Spinner />
+        )}
       </Router>
     </React.Fragment>
   );

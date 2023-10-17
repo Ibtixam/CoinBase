@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ModeContext from "./ModeContext";
 
 const ModeState = ({ children }) => {
-  const initialMode = JSON.parse(localStorage.getItem("theme")) || false;
+  const initialMode = JSON.parse(localStorage.getItem("theme")) || true;
 
   // States
   const [mode, setMode] = useState(initialMode);

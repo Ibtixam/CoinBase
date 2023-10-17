@@ -9,3 +9,4 @@ export { ReactComponent as LightSettingsSvg } from "./settings.svg";
 export { ReactComponent as LightEyeSvg } from "./eye.svg";
 export { ReactComponent as LightChartSvg } from "./Chart.svg";
 export { ReactComponent as LightCalenderSvg } from "./calender.svg";
+export { ReactComponent as LightBitcoinSvg } from "./bitcoin.svg";

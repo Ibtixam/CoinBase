@@ -1,13 +1,7 @@
 import React, { useContext } from "react";
 import Agent from "../../assets/images/Agent.png";
 import ModeContext from "../../Context/Mode/ModeContext";
-import {
-  LogoSvg,
-  SearchIconSvg,
-  OvalSvg,
-  BellSvg,
-  SunSvg,
-} from "../../assets/svgs";
+import { LogoSvg, SearchIconSvg, OvalSvg, BellSvg, SunSvg } from "../../assets/svgs";
 import { MoonSvg, LightLogoSvg } from "../../assets/lightmodeSvgs";
 import {
   BellNum,
