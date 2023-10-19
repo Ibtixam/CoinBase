@@ -8,13 +8,13 @@ import TransactionList from "./Components/TransactionList/TransactionList";
 import Statistics from "./Components/Statistics/Statistics";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Trade from "./Components/Trade/Trade";
-import GlobalStyles from "./styles/global-styles";
+import GlobalStyles from "./styles/global-styles.js";
 import { Spinner } from "./Components/Spinner";
 import MoodContext from "./Context/Mode/ModeContext";
 
 export default function App() {
   const { loading } = useContext(MoodContext);
-  
+
   return (
     <React.Fragment>
       <GlobalStyles />
