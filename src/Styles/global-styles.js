@@ -12,6 +12,10 @@ export default createGlobalStyle`
   transition: ease .3s;
 }
 
+html{
+  zoom: 90%;
+}
+
 #root {
   display: flex;
   justify-content: center;

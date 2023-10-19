@@ -1,5 +1,5 @@
 import React from "react";
-import { OptionSvg, ArrowSvg, ArrowCircleSvg } from "../../assets/svgs";
+import { OptionSvg, ArrowSvg, ArrowCircleSvg } from "../../../assets/svgs";
 import {
   ArrowWrapper,
   CurrencyName,

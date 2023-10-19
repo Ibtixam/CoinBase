@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import DropDown from "../DropDown/DropDown";
+import DropDown from "../../../Components/DropDown/DropDown";
 import {
   CircleSvg,
   LoaderSvg,
@@ -9,7 +9,7 @@ import {
   CalenderSvg,
   TriangleSvg,
   TriGreenSvg,
-} from "../../assets/svgs";
+} from "../../../assets/svgs";
 import {
   Box,
   BoxStatus,
@@ -26,8 +26,8 @@ import {
 import {
   LightCalenderSvg,
   LightChartSvg,
-} from "../../assets/lightmodeSvgs/index";
-import ModeContext from "../../Context/Mode/ModeContext";
+} from "../../../assets/lightmodeSvgs/index";
+import ModeContext from "../../../Context/Mode/ModeContext";
 
 export default function Overview() {
   const { mode } = useContext(ModeContext);
@@ -60,9 +60,9 @@ export default function Overview() {
     <React.Fragment>
       <div>
         <HeadingWrapper>
-          <HeadingText>Agent Management   System Overview</HeadingText>
+          <HeadingText>Agent Management System Overview</HeadingText>
           <HeadingText>
-            Accounts  |  AGENT ROSE
+            Accounts | AGENT ROSE
             <TriangleSvg style={{ margin: "0px 7px" }} />
           </HeadingText>
         </HeadingWrapper>
