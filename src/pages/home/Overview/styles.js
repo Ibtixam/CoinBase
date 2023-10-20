@@ -97,7 +97,7 @@ export const BoxStatus = styled.div`
   width: 127px;
 `;
 
-export const GraphWrapper = styled.p`
+export const GraphWrapper = styled.div`
   display: flex;
   margin-top: 12px;
   .s-graph {
