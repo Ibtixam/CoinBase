@@ -14,7 +14,6 @@ import MoodContext from "./Context/Mode/ModeContext";
 
 export default function App() {
   const { loading } = useContext(MoodContext);
-
   return (
     <React.Fragment>
       <GlobalStyles />
