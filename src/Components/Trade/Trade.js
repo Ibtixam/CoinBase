@@ -25,7 +25,7 @@ import {
 } from "./styles";
 
 export default function Trade() {
-  const [selectedUserId, setSelectedUserId] = useState(null);
+  const [selectedUserId, setSelectedUserId] = useState(0);
   const selectedUser = data.find((user) => user.id === selectedUserId);
 
   return (

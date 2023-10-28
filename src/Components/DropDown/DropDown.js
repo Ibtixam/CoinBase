@@ -20,7 +20,7 @@ const DropDown = ({ index, optionList, style }) => {
     };
   }, []);
 
-  const toggleOptions = (index) => {
+  const toggleOptions = () => {
     if (!options) {
       setOptions(index);
     } else {
@@ -35,10 +35,10 @@ const DropDown = ({ index, optionList, style }) => {
       <OptionSvg
         ref={Opt}
         style={{ cursor: "pointer" }}
-        onClick={() => toggleOptions(index)}
+        onClick={() => toggleOptions()}
       />
       <Option selected={selected}>
-        {optionList?.map((item, index) => {
+        {optionList.map((item, index) => {
           const { label } = item;
           return <OptionButton key={index}>{label}</OptionButton>;
         })}
