@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
-import DropDown from "../DropDown/DropDown";
-import { RowWrapper, TransactionStatus } from "./styles";
-import ModeContext from "../../Context/Mode/ModeContext";
+import React, { useContext } from 'react';
+import DropDown from '../DropDown/DropDown';
+import { RowWrapper, TransactionStatus } from './styles';
+import ModeContext from '../../Context/Mode/ModeContext';
 
 export default function Transaction({ item, index }) {
   const { Svg, status, name, bg, LightSvg } = item;
@@ -22,7 +22,7 @@ export default function Transaction({ item, index }) {
       <p className="return">#18000</p>
       <TransactionStatus style={{ background: bg }}>{status}</TransactionStatus>
       <DropDown
-        optionList={[{ label: "Edit" }, { label: "Delete" }]}
+        optionList={[{ label: 'Edit' }, { label: 'Delete' }]}
         index={index}
       />
     </RowWrapper>

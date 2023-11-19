@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 export const Option = styled.div`
   position: absolute;
@@ -18,7 +18,7 @@ export const Option = styled.div`
   ${({ selected }) =>
     selected &&
     css`
-      height: 53px;
+      height: 55px;
       border: 1px solid #dedede;
     `}
 `;
@@ -28,7 +28,7 @@ export const OptionButton = styled.div`
   font-size: 12px;
   font-weight: 400;
   background: white;
-  padding: 4px;
+  padding: 5px;
   cursor: pointer;
   &:hover {
     background: var(--bgGradient);

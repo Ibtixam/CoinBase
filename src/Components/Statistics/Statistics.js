@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext } from 'react';
 import {
   OptionSvg,
   AmazonSvg,
@@ -14,7 +14,7 @@ import {
   AvarageCircle1Svg,
   AvarageCircle2Svg,
   AvarageCircle3Svg,
-} from "../../assets/svgs";
+} from '../../assets/svgs';
 import {
   StatisticsWrapper,
   HeadingWrapper,
@@ -28,8 +28,8 @@ import {
   ProgressBar,
   CircleWrapper,
   CompanyWrapper,
-} from "./styles";
-import ModeContext from "../../Context/Mode/ModeContext";
+} from './styles';
+import ModeContext from '../../Context/Mode/ModeContext';
 
 export default function Statistics() {
   const values = [60, 50, 40, 30, 20, 10];
@@ -49,17 +49,17 @@ export default function Statistics() {
   ];
 
   const COMPANY_NAMES = [
-    { name: "Amazon" },
-    { name: "Google" },
-    { name: "iTunes" },
-    { name: "Payoneer" },
-    { name: "Bitcoin" },
-    { name: "Ethereum" },
-    { name: "Tecno" },
-    { name: "Paypal" },
-    { name: "Aliexpress" },
-    { name: "Konga" },
-    { name: "Jumia" },
+    { name: 'Amazon' },
+    { name: 'Google' },
+    { name: 'iTunes' },
+    { name: 'Payoneer' },
+    { name: 'Bitcoin' },
+    { name: 'Ethereum' },
+    { name: 'Tecno' },
+    { name: 'Paypal' },
+    { name: 'Aliexpress' },
+    { name: 'Konga' },
+    { name: 'Jumia' },
   ];
 
   const { mode } = useContext(ModeContext);
@@ -96,7 +96,7 @@ export default function Statistics() {
           <div className="lines"></div>
           <div className="lines"></div>
           <div className="lines"></div>
-          <div style={{ marginLeft: "30px" }}>
+          <div style={{ marginLeft: '30px' }}>
             {GRAPH_SVG.map((element, index) => {
               const { Svg } = element;
               return <Svg key={index} className="graph-img" />;

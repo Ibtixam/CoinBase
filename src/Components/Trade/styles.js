@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 export const HeadingWrapper = styled.div`
   max-width: 100%;

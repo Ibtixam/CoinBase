@@ -1,8 +1,14 @@
-import React, { useContext } from "react";
-import Agent from "../../assets/images/Agent.png";
-import ModeContext from "../../Context/Mode/ModeContext";
-import { LogoSvg, SearchIconSvg, OvalSvg, BellSvg, SunSvg } from "../../assets/svgs";
-import { MoonSvg, LightLogoSvg } from "../../assets/lightmodeSvgs";
+import React, { useContext } from 'react';
+import Agent from '../../assets/images/Agent.png';
+import ModeContext from '../../Context/Mode/ModeContext';
+import {
+  LogoSvg,
+  SearchIconSvg,
+  OvalSvg,
+  BellSvg,
+  SunSvg,
+} from '../../assets/svgs';
+import { MoonSvg, LightLogoSvg } from '../../assets/lightmodeSvgs';
 import {
   BellNum,
   Bellnotification,
@@ -16,12 +22,12 @@ import {
   ProfileImage,
   RightDiv,
   SearchDiv,
-} from "./styles";
+} from './styles';
 
 export default function Navbar() {
   const handleSidebar = () => {
-    let sidebar = document.querySelector(".sidebar");
-    sidebar.classList.toggle("menu-active");
+    let sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('menu-active');
   };
 
   const MenuLine = [];

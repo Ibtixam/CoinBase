@@ -1,16 +1,16 @@
-import React, { useContext } from "react";
-import Navbar from "./Components/Navbar/Navbar";
-import Sidebar from "./Components/Sidebar/Sidebar";
-import Home from "./pages/home";
-import Wallet from "./Components/WalletComoponent/WalletCom";
-import UserList from "./Components/UserList/UserList";
-import TransactionList from "./Components/TransactionList/TransactionList";
-import Statistics from "./Components/Statistics/Statistics";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Trade from "./Components/Trade/Trade";
-import GlobalStyles from "./styles/global-styles";
-import { Spinner } from "./Components/Spinner";
-import MoodContext from "./Context/Mode/ModeContext";
+import React, { useContext } from 'react';
+import Navbar from './Components/Navbar/Navbar';
+import Sidebar from './Components/Sidebar/Sidebar';
+import Home from './pages/home';
+import Wallet from './Components/WalletComoponent/WalletCom';
+import UserList from './Components/UserList/UserList';
+import TransactionList from './Components/TransactionList/TransactionList';
+import Statistics from './Components/Statistics/Statistics';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Trade from './Components/Trade/Trade';
+import GlobalStyles from './styles/global-styles';
+import { Spinner } from './Components/Spinner';
+import MoodContext from './Context/Mode/ModeContext';
 
 export default function App() {
   const { loading } = useContext(MoodContext);

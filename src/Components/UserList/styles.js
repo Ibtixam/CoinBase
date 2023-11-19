@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const UserWrapper = styled.div`
   width: 1023px;
@@ -14,7 +14,6 @@ export const UserWrapper = styled.div`
     text-align: center;
   }
 `;
-
 
 export const UserHeadings = styled.div`
   display: flex;

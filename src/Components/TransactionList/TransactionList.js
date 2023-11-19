@@ -1,8 +1,8 @@
-import React from "react";
-import { OptionSvg } from "../../assets/svgs";
-import Transaction from "../Transaction/Transaction";
-import { Data } from "./Data";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { OptionSvg } from '../../assets/svgs';
+import Transaction from '../Transaction/Transaction';
+import { Data } from './Data';
+import { Link } from 'react-router-dom';
 import {
   Button,
   HeadingWrapper,
@@ -10,7 +10,7 @@ import {
   RowTitleWrapper,
   Title,
   TransactionWrapper,
-} from "./styles";
+} from './styles';
 
 export default function TransactionList() {
   return (

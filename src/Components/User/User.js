@@ -1,12 +1,12 @@
-import React from "react";
-import DropDown from "../DropDown/DropDown";
+import React from 'react';
+import DropDown from '../DropDown/DropDown';
 import {
   Action,
   UserEmail,
   UserImage,
   UserStatus,
   UserWrapper,
-} from "./styles";
+} from './styles';
 
 export default function User({ data, index }) {
   const { bg, status, name, email, photo } = data;
@@ -20,7 +20,7 @@ export default function User({ data, index }) {
       <UserEmail>{email}</UserEmail>
       <Action>
         <DropDown
-          optionList={[{ label: "Edit" }, { label: "Delete" }]}
+          optionList={[{ label: 'Edit' }, { label: 'Delete' }]}
           index={index}
         />
       </Action>

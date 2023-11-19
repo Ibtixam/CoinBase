@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext } from 'react';
 import {
   WalletShapeSvg,
   TrophySvg,
@@ -7,7 +7,7 @@ import {
   Star1Svg,
   Star2Svg,
   EarningStarSvg,
-} from "../../assets/svgs";
+} from '../../assets/svgs';
 import {
   ButtonWrapper,
   GradientText,
@@ -17,8 +17,8 @@ import {
   TrophyTitle,
   TrophyWrapper,
   WalletWrapper,
-} from "./styles";
-import ModeContext from "../../Context/Mode/ModeContext";
+} from './styles';
+import ModeContext from '../../Context/Mode/ModeContext';
 
 export default function Wallet() {
   const { mode } = useContext(ModeContext);

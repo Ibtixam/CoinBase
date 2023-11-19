@@ -1,8 +1,8 @@
-import React from "react";
-import { OptionSvg } from "../../assets/svgs";
-import User from "../User/User";
-import { UserData } from "./Data";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { OptionSvg } from '../../assets/svgs';
+import User from '../User/User';
+import { UserData } from './Data';
+import { Link } from 'react-router-dom';
 import {
   Button,
   HeadingTitle,
@@ -10,7 +10,7 @@ import {
   Title,
   UserHeadings,
   UserWrapper,
-} from "./styles";
+} from './styles';
 
 export default function UserList() {
   return (

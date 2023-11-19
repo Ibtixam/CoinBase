@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useContext } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import {
   EyeSvg,
   UserSvg,
@@ -8,7 +8,7 @@ import {
   TransactionSvg,
   StaticticSvg,
   SettingsSvg,
-} from "../../assets/svgs";
+} from '../../assets/svgs';
 import {
   LightTradeSvg,
   LightWalletSvg,
@@ -17,53 +17,53 @@ import {
   LightUserSvg,
   LightSettingsSvg,
   LightEyeSvg,
-} from "../../assets/lightmodeSvgs";
-import { Button, ButtonWrapper, ItemWrapper, SidebarWrapper } from "./styles";
-import ModeContext from "../../Context/Mode/ModeContext";
+} from '../../assets/lightmodeSvgs';
+import { Button, ButtonWrapper, ItemWrapper, SidebarWrapper } from './styles';
+import ModeContext from '../../Context/Mode/ModeContext';
 
 export default function Sidebar() {
   let location = useLocation();
 
   const MenuItems = [
     {
-      link: "/",
-      name: "Overview",
+      link: '/',
+      name: 'Overview',
       DarkModeSvg: EyeSvg,
       LightModeSvg: LightEyeSvg,
     },
     {
-      link: "/userlist",
-      name: "User",
+      link: '/userlist',
+      name: 'User',
       DarkModeSvg: UserSvg,
       LightModeSvg: LightUserSvg,
     },
     {
-      link: "/trade",
-      name: "Trade",
+      link: '/trade',
+      name: 'Trade',
       DarkModeSvg: TradeSvg,
       LightModeSvg: LightTradeSvg,
     },
     {
-      link: "/wallet",
-      name: "Wallet",
+      link: '/wallet',
+      name: 'Wallet',
       DarkModeSvg: WalletSvg,
       LightModeSvg: LightWalletSvg,
     },
     {
-      link: "/transactionlist",
-      name: "Transactions",
+      link: '/transactionlist',
+      name: 'Transactions',
       DarkModeSvg: TransactionSvg,
       LightModeSvg: LightTransactionSvg,
     },
     {
-      link: "/statistics",
-      name: "Statistics",
+      link: '/statistics',
+      name: 'Statistics',
       DarkModeSvg: StaticticSvg,
       LightModeSvg: LightStatisticsSvg,
     },
     {
-      link: "/setting",
-      name: "Settings",
+      link: '/setting',
+      name: 'Settings',
       DarkModeSvg: SettingsSvg,
       LightModeSvg: LightSettingsSvg,
     },
@@ -73,7 +73,7 @@ export default function Sidebar() {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
 
   let Context = useContext(ModeContext);

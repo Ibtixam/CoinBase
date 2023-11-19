@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import DropDown from "../../../Components/DropDown/DropDown";
+import React, { useContext } from 'react';
+import DropDown from '../../../Components/DropDown/DropDown';
 import {
   CircleSvg,
   LoaderSvg,
@@ -9,7 +9,7 @@ import {
   CalenderSvg,
   TriangleSvg,
   TriGreenSvg,
-} from "../../../assets/svgs";
+} from '../../../assets/svgs';
 import {
   Box,
   BoxStatus,
@@ -22,37 +22,37 @@ import {
   Numbers,
   Title,
   TitleWrapper,
-} from "./styles";
+} from './styles';
 import {
   LightCalenderSvg,
   LightChartSvg,
-} from "../../../assets/lightmodeSvgs/index";
-import ModeContext from "../../../Context/Mode/ModeContext";
+} from '../../../assets/lightmodeSvgs/index';
+import ModeContext from '../../../Context/Mode/ModeContext';
 
 export default function Overview() {
   const { mode } = useContext(ModeContext);
 
   const optionStyle = {
-    position: "absolute",
-    right: "-30px",
-    top: "-36px",
+    position: 'absolute',
+    right: '-30px',
+    top: '-36px',
   };
 
   const data = [
     {
       numbers: 15000,
-      totalnumText: "User",
-      percent: "22.8%",
+      totalnumText: 'User',
+      percent: '22.8%',
     },
     {
       numbers: 43498,
-      totalnumText: "Trade",
-      percent: "11.8%",
+      totalnumText: 'Trade',
+      percent: '11.8%',
     },
     {
       numbers: 24642,
-      totalnumText: "Transactions",
-      percent: "11.8%",
+      totalnumText: 'Transactions',
+      percent: '11.8%',
     },
   ];
 
@@ -60,10 +60,10 @@ export default function Overview() {
     <React.Fragment>
       <div>
         <HeadingWrapper>
-          <HeadingText>Agent Management   System Overview</HeadingText>
+          <HeadingText>Agent Management System Overview</HeadingText>
           <HeadingText>
-            Accounts  |  AGENT ROSE
-            <TriangleSvg style={{ margin: "0px 7px" }} />
+            Accounts | AGENT ROSE
+            <TriangleSvg style={{ margin: '0px 7px' }} />
           </HeadingText>
         </HeadingWrapper>
       </div>
@@ -91,7 +91,7 @@ export default function Overview() {
                   <GraphWrapper>
                     <GraphNumber>
                       {percent}
-                      <TriGreenSvg style={{ marginLeft: "4px" }} />
+                      <TriGreenSvg style={{ marginLeft: '4px' }} />
                     </GraphNumber>
                     {mode ? (
                       <GraphSvg className="s-graph" />
@@ -102,7 +102,7 @@ export default function Overview() {
                   <DropDown
                     style={optionStyle}
                     index={index}
-                    optionList={[{ label: "Veiw" }, { label: "Delete" }]}
+                    optionList={[{ label: 'Veiw' }, { label: 'Delete' }]}
                   />
                 </BoxStatus>
               </Box>

@@ -1,5 +1,5 @@
-import React from "react";
-import { OptionSvg, ArrowSvg, ArrowCircleSvg } from "../../../assets/svgs";
+import React from 'react';
+import { OptionSvg, ArrowSvg, ArrowCircleSvg } from '../../../assets/svgs';
 import {
   ArrowWrapper,
   CurrencyName,
@@ -9,7 +9,7 @@ import {
   Title,
   TitleWrapper,
   Wrapper,
-} from "./styles";
+} from './styles';
 
 export default function Rates() {
   return (
@@ -31,7 +31,7 @@ export default function Rates() {
       </TitleWrapper>
       <div
         style={{
-          display: "flex",
+          display: 'flex',
         }}
       >
         <CurrencyWrapper>
@@ -78,7 +78,7 @@ export default function Rates() {
         </CurrencyWrapper>
         <ArrowWrapper>
           <ArrowSvg className="arrow" />
-          <ArrowCircleSvg style={{ position: "relative" }} />
+          <ArrowCircleSvg style={{ position: 'relative' }} />
         </ArrowWrapper>
       </div>
     </Wrapper>

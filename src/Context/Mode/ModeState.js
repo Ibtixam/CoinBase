@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import ModeContext from "./ModeContext";
+import React, { useEffect, useState } from 'react';
+import ModeContext from './ModeContext';
 
 const ModeState = ({ children }) => {
-  const themeData = localStorage.getItem("theme");
+  const themeData = localStorage.getItem('theme');
   const initialMode = themeData ? JSON.parse(themeData) : null;
 
   // States
@@ -12,8 +12,8 @@ const ModeState = ({ children }) => {
   // Toggle Modes
   const toggleMode = () => {
     setMode(!mode);
-    document.body.classList.toggle("light-mode", mode);
-    localStorage.setItem("theme", JSON.stringify(mode));
+    document.body.classList.toggle('light-mode', mode);
+    localStorage.setItem('theme', JSON.stringify(mode));
   };
 
   // Use Effects
@@ -25,7 +25,7 @@ const ModeState = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    document.body.classList.toggle("light-mode", mode);
+    document.body.classList.toggle('light-mode', mode);
     setMode(!mode);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

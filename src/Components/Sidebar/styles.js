@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 export const SidebarWrapper = styled.div`
   border: 2px solid #f0f0f0;
