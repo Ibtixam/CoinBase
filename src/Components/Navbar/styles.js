@@ -78,8 +78,8 @@ export const SearchDiv = styled.div`
   width: 440px;
   border-radius: 100px;
   border: 1px solid white;
-  ${({ mode }) =>
-    mode &&
+  ${({ $mode }) =>
+    $mode &&
     css`
       border: double 2px transparent;
       background-image: linear-gradient(white, white), var(--bgGradient);

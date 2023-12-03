@@ -10,8 +10,8 @@ export const WalletWrapper = styled.div`
   position: relative;
   overflow: hidden;
 
-  ${({ mode }) =>
-    mode &&
+  ${({ $mode }) =>
+    $mode &&
     css`
       background: var(--bgGradient);
     `}

@@ -21,7 +21,7 @@ import {
 import { Button, ButtonWrapper, ItemWrapper, SidebarWrapper } from './styles';
 import ModeContext from '../../Context/Mode/ModeContext';
 
-export default function Sidebar() {
+const Sidebar = () => {
   let location = useLocation();
 
   const MenuItems = [
@@ -85,9 +85,9 @@ export default function Sidebar() {
         const { name, link, DarkModeSvg, LightModeSvg } = item;
         const active = location.pathname === link;
         return (
-          <ButtonWrapper key={index} active={active} onClick={ScrollToTop}>
+          <ButtonWrapper key={index} $active={active} onClick={ScrollToTop}>
             <Link to={link}>
-              <ItemWrapper mode={active}>
+              <ItemWrapper $mode={active}>
                 {mode || active ? <DarkModeSvg /> : <LightModeSvg />}
                 {name}
               </ItemWrapper>
@@ -99,4 +99,6 @@ export default function Sidebar() {
       <Button>Logout</Button>
     </SidebarWrapper>
   );
-}
+};
+
+export default Sidebar;

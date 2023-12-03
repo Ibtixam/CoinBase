@@ -23,7 +23,7 @@ import ModeContext from '../../Context/Mode/ModeContext';
 export default function Wallet() {
   const { mode } = useContext(ModeContext);
   return (
-    <WalletWrapper mode={!mode}>
+    <WalletWrapper $mode={!mode}>
       <TitleWrapper>
         <Title>Wallet</Title>
         <ButtonWrapper>

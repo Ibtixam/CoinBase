@@ -65,7 +65,7 @@ export default function Statistics() {
   const { mode } = useContext(ModeContext);
 
   return (
-    <StatisticsWrapper mode={!mode}>
+    <StatisticsWrapper $mode={!mode}>
       <HeadingWrapper>
         <Title>Statistics</Title>
         <OptionSvg />

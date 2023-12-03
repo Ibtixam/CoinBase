@@ -35,8 +35,8 @@ export const SidebarWrapper = styled.div`
 export const ButtonWrapper = styled.div`
   margin-top: 20px;
   transition: none;
-  ${({ active }) =>
-    active &&
+  ${({ $active }) =>
+    $active &&
     css`
       background: var(--bgGradient);
       border-top-right-radius: 100px;
@@ -53,8 +53,8 @@ export const ItemWrapper = styled.div`
   color: var(--secondary-color);
   font-size: 12px;
   font-weight: 400;
-  ${({ mode }) =>
-    mode &&
+  ${({ $mode }) =>
+    $mode &&
     css`
       color: white;
     `}

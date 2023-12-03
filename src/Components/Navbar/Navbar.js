@@ -45,7 +45,7 @@ export default function Navbar() {
         <LeftDiv>{mode ? <LogoSvg /> : <LightLogoSvg />}</LeftDiv>
         <RightDiv>
           <div className="searchbar">
-            <SearchDiv mode={!mode}>
+            <SearchDiv $mode={!mode}>
               <SearchIconSvg />
               <SearchIconSvg />
               <Input type="text" placeholder="Search e.g cards" />

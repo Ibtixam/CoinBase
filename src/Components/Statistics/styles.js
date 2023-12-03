@@ -20,8 +20,8 @@ export const StatisticsWrapper = styled.div`
     margin-right: 63px;
   }
 
-  ${({ mode }) =>
-    mode &&
+  ${({ $mode }) =>
+    $mode &&
     css`
       .lines {
         border: 0.5px dashed #dedede;
