@@ -12,7 +12,9 @@ export const Option = styled.div`
   font-size: 14px;
   font-weight: 400;
   z-index: 12;
-  transition: height 0.2s, border 0.3s;
+  transition:
+    height 0.2s,
+    border 0.3s;
   border: 0px solid #dedede;
   overflow: hidden;
   ${({ selected }) =>
