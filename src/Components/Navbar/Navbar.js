@@ -23,6 +23,7 @@ import {
   RightDiv,
   SearchDiv,
 } from './styles';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const handleSidebar = () => {
@@ -42,7 +43,11 @@ export default function Navbar() {
     <header>
       <Nav>
         <Menu onClick={handleSidebar}>{MenuLine}</Menu>
-        <LeftDiv>{mode ? <LogoSvg /> : <LightLogoSvg />}</LeftDiv>
+        <LeftDiv>
+          <Link to={'/'} style={{ cursor: 'pointer' }}>
+            {mode ? <LogoSvg /> : <LightLogoSvg />}
+          </Link>
+        </LeftDiv>
         <RightDiv>
           <div className="searchbar">
             <SearchDiv $mode={!mode}>
