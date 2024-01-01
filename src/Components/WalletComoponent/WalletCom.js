@@ -29,7 +29,7 @@ export default function WalletCom() {
         <HeadingWrapper>
           <HeadingText>Agent Management Wallet</HeadingText>
           <HeadingText>
-            Accounts | AGENT ROSE
+            Accounts  |  AGENT ROSE
             <TriangleSvg style={{ margin: '0px 7px' }} />
           </HeadingText>
         </HeadingWrapper>

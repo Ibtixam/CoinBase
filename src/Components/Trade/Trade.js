@@ -34,7 +34,7 @@ export default function Trade() {
         <HeadingWrapper>
           <HeadingText>Agent Management Trade</HeadingText>
           <HeadingText>
-            Accounts | AGENT ROSE
+            Accounts  |  AGENT ROSE
             <TriangleSvg style={{ margin: '0px 7px' }} />
           </HeadingText>
         </HeadingWrapper>

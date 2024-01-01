@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
 
 export const HeadingWrapper = styled.div`
-  max-width: 100%;
   height: 33px;
   display: flex;
   justify-content: space-between;
@@ -20,8 +19,7 @@ export const Title = styled.h4`
 `;
 
 export const Wrapper = styled.div`
-  width: 1023px;
-  height: 750px;
+  width: 100%;
   border-radius: 10px;
   border: 2px solid #f0f0f0;
   background: var(--primary-color);
@@ -31,8 +29,6 @@ export const Wrapper = styled.div`
 `;
 
 export const ChatBox = styled.div`
-  width: 28%;
-  height: 100%;
   border-right: 2px solid #f0f0f0;
   .chats {
     transition: ease-in 5ms;
@@ -42,9 +38,7 @@ export const ChatBox = styled.div`
 
 export const ChatDetails = styled.div`
   display: flex;
-  padding-left: 35px;
-  padding-bottom: 16px;
-  padding-top: 22px;
+  padding: 22px 0 16px 35px;
   border-bottom: 2px solid #f0f0f0;
 `;
 
@@ -99,15 +93,12 @@ export const ChatWrapper = styled.div`
 
 export const Chats = styled.div`
   display: flex;
-  padding-left: 35px;
-  padding-bottom: 5px;
-  padding-top: 22px;
+  padding: 22px 100px 5px 35px;
   cursor: pointer;
 `;
 
 export const MessageWrapper = styled.div`
-  width: 73%;
-  padding: 30px 38px;
+  padding: 30px 38px 12px;
 `;
 
 export const MessageTime = styled.p`

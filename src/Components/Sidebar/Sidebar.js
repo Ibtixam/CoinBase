@@ -69,7 +69,7 @@ const Sidebar = () => {
     },
   ];
 
-  const ScrollToTop = () =>
+  const scrollToTop = () =>
     window.scrollTo({
       top: 0,
       left: 0,
@@ -85,7 +85,7 @@ const Sidebar = () => {
         const { name, link, DarkModeSvg, LightModeSvg } = item;
         const active = location.pathname === link;
         return (
-          <ButtonWrapper key={index} $active={active} onClick={ScrollToTop}>
+          <ButtonWrapper key={index} $active={active} onClick={scrollToTop}>
             <Link to={link}>
               <ItemWrapper $mode={active}>
                 {mode || active ? <DarkModeSvg /> : <LightModeSvg />}
